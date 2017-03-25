@@ -29,7 +29,7 @@
     iOSOnvif *onvif = [[iOSOnvif alloc] initWithCameraPath:@"http://blaubit.co.kr:8899/onvif/device_service" userId:@"blaubit" password:@"1234"];
     
     NSURL *url = [onvif getStreamUrl];
-    XCTAssert(url == nil);
+    XCTAssert(url != nil);
 }
 
 @end

@@ -22,6 +22,18 @@
     return self;
 }
 
+- (NSString*)chanagedHostPath:(NSString*)path {
+    NSURL *nsUrl = [NSURL URLWithString:path];
+    NSURL *cameraNsUrl = [NSURL URLWithString:cameraUrl];
+    
+    if (nsUrl == nil || cameraNsUrl == nil)
+        return nil;
+    
+    NSString *changedPath = [NSString stringWithFormat:@"%@://%@:%@%@", nsUrl.scheme, cameraNsUrl.host, cameraNsUrl.port, nsUrl.path];
+    
+    return changedPath;
+}
+
 - (NSURL*)getStreamUrl {
     std::string url = cameraUrl.UTF8String;
     std::string userId = self->user.UTF8String;
@@ -34,11 +46,7 @@
     std::string mediaUrl;
     int value = onvifDevice.GetMediaUrl(mediaUrl);
     
-    NSURL *nsUrl = [NSURL URLWithString:[NSString stringWithUTF8String:mediaUrl.c_str()]];
-    NSURL *cameraNsUrl = [NSURL URLWithString:cameraUrl];
-    
-    NSString *changedPath = [NSString stringWithFormat:@"%@://%@:%@%@", nsUrl.scheme, cameraNsUrl.host, cameraNsUrl.port, nsUrl.path];
-    
+    NSString *changedPath = [self chanagedHostPath:[NSString stringWithUTF8String:mediaUrl.c_str()]];
     OnvifClientMedia media(onvifDevice);
     _trt__GetProfilesResponse profiles;
     value = media.GetProfiles(profiles, changedPath.UTF8String);
@@ -54,9 +62,10 @@
             continue;
         }
         
-        NSURL *returnUrl = [NSURL URLWithString:[NSString stringWithUTF8String:streamUrl.MediaUri->Uri.c_str()]];
-        if (returnUrl != nil) {
-            return returnUrl;
+        NSString *changedRTSPPath = [self chanagedHostPath:[NSString stringWithUTF8String:streamUrl.MediaUri->Uri.c_str()]];
+    
+        if (![changedRTSPPath isEqualToString:@""]) {
+            return [NSURL URLWithString:changedRTSPPath];
         }
     }
     
