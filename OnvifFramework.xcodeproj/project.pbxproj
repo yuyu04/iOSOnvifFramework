@@ -1,0 +1,1414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C156B4491E84DB0600344598 /* OnvifFrameworkTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = C156B4481E84DB0600344598 /* OnvifFrameworkTests.mm */; };
+		C156B44B1E84DB0600344598 /* OnvifFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B43D1E84DB0600344598 /* OnvifFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C156B48F1E84DB6000344598 /* stdsoap2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4801E84DB6000344598 /* stdsoap2.cpp */; };
+		C156B4A91E84DB6B00344598 /* onvifclient.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4981E84DB6B00344598 /* onvifclient.hpp */; };
+		C156B4AA1E84DB6B00344598 /* onvifclientdevice.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4991E84DB6B00344598 /* onvifclientdevice.hpp */; };
+		C156B4AB1E84DB6B00344598 /* onvifclientevent.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B49A1E84DB6B00344598 /* onvifclientevent.hpp */; };
+		C156B4AC1E84DB6B00344598 /* onvifclientimaging.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B49B1E84DB6B00344598 /* onvifclientimaging.hpp */; };
+		C156B4AD1E84DB6B00344598 /* onvifclientmedia.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B49C1E84DB6B00344598 /* onvifclientmedia.hpp */; };
+		C156B4AE1E84DB6B00344598 /* onvifclientptz.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B49D1E84DB6B00344598 /* onvifclientptz.hpp */; };
+		C156B4AF1E84DB6B00344598 /* onvifclientreceiver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B49E1E84DB6B00344598 /* onvifclientreceiver.hpp */; };
+		C156B4B01E84DB6B00344598 /* onvifclientrecording.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B49F1E84DB6B00344598 /* onvifclientrecording.hpp */; };
+		C156B4B11E84DB6B00344598 /* onvifclientremotediscovery.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A01E84DB6B00344598 /* onvifclientremotediscovery.hpp */; };
+		C156B4B21E84DB6B00344598 /* onvifclientreplay.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A11E84DB6B00344598 /* onvifclientreplay.hpp */; };
+		C156B4B31E84DB6B00344598 /* onvifclientsearch.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A21E84DB6B00344598 /* onvifclientsearch.hpp */; };
+		C156B4B41E84DB6B00344598 /* onvifserver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A31E84DB6B00344598 /* onvifserver.hpp */; };
+		C156B4B51E84DB6B00344598 /* onvifserverdevice.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A41E84DB6B00344598 /* onvifserverdevice.hpp */; };
+		C156B4B61E84DB6B00344598 /* onvifserverdiscover.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A51E84DB6B00344598 /* onvifserverdiscover.hpp */; };
+		C156B4B71E84DB6B00344598 /* onvifserverevent.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A61E84DB6B00344598 /* onvifserverevent.hpp */; };
+		C156B4B81E84DB6B00344598 /* onvifservermedia.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A71E84DB6B00344598 /* onvifservermedia.hpp */; };
+		C156B4B91E84DB6B00344598 /* onvifserverreceiver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A81E84DB6B00344598 /* onvifserverreceiver.hpp */; };
+		C156B5351E84DB7300344598 /* soapC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4CE1E84DB7300344598 /* soapC.cpp */; };
+		C156B5361E84DB7300344598 /* soapCreatePullPointBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4CF1E84DB7300344598 /* soapCreatePullPointBindingProxy.cpp */; };
+		C156B5371E84DB7300344598 /* soapCreatePullPointBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4D01E84DB7300344598 /* soapCreatePullPointBindingProxy.h */; };
+		C156B5381E84DB7300344598 /* soapCreatePullPointBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4D11E84DB7300344598 /* soapCreatePullPointBindingService.cpp */; };
+		C156B5391E84DB7300344598 /* soapCreatePullPointBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4D21E84DB7300344598 /* soapCreatePullPointBindingService.h */; };
+		C156B53A1E84DB7300344598 /* soapDeviceBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4D31E84DB7300344598 /* soapDeviceBindingProxy.cpp */; };
+		C156B53B1E84DB7300344598 /* soapDeviceBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4D41E84DB7300344598 /* soapDeviceBindingProxy.h */; };
+		C156B53C1E84DB7300344598 /* soapDeviceBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4D51E84DB7300344598 /* soapDeviceBindingService.cpp */; };
+		C156B53D1E84DB7300344598 /* soapDeviceBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4D61E84DB7300344598 /* soapDeviceBindingService.h */; };
+		C156B53E1E84DB7300344598 /* soapDeviceIOBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4D71E84DB7300344598 /* soapDeviceIOBindingProxy.cpp */; };
+		C156B53F1E84DB7300344598 /* soapDeviceIOBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4D81E84DB7300344598 /* soapDeviceIOBindingProxy.h */; };
+		C156B5401E84DB7300344598 /* soapDeviceIOBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4D91E84DB7300344598 /* soapDeviceIOBindingService.cpp */; };
+		C156B5411E84DB7300344598 /* soapDeviceIOBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4DA1E84DB7300344598 /* soapDeviceIOBindingService.h */; };
+		C156B5421E84DB7300344598 /* soapDiscoveryLookupBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4DB1E84DB7300344598 /* soapDiscoveryLookupBindingProxy.cpp */; };
+		C156B5431E84DB7300344598 /* soapDiscoveryLookupBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4DC1E84DB7300344598 /* soapDiscoveryLookupBindingProxy.h */; };
+		C156B5441E84DB7300344598 /* soapDiscoveryLookupBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4DD1E84DB7300344598 /* soapDiscoveryLookupBindingService.cpp */; };
+		C156B5451E84DB7300344598 /* soapDiscoveryLookupBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4DE1E84DB7300344598 /* soapDiscoveryLookupBindingService.h */; };
+		C156B5461E84DB7300344598 /* soapDisplayBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4DF1E84DB7300344598 /* soapDisplayBindingProxy.cpp */; };
+		C156B5471E84DB7300344598 /* soapDisplayBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4E01E84DB7300344598 /* soapDisplayBindingProxy.h */; };
+		C156B5481E84DB7300344598 /* soapDisplayBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4E11E84DB7300344598 /* soapDisplayBindingService.cpp */; };
+		C156B5491E84DB7300344598 /* soapDisplayBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4E21E84DB7300344598 /* soapDisplayBindingService.h */; };
+		C156B54A1E84DB7300344598 /* soapEventBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4E31E84DB7300344598 /* soapEventBindingProxy.cpp */; };
+		C156B54B1E84DB7300344598 /* soapEventBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4E41E84DB7300344598 /* soapEventBindingProxy.h */; };
+		C156B54C1E84DB7300344598 /* soapEventBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4E51E84DB7300344598 /* soapEventBindingService.cpp */; };
+		C156B54D1E84DB7300344598 /* soapEventBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4E61E84DB7300344598 /* soapEventBindingService.h */; };
+		C156B54E1E84DB7300344598 /* soapH.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4E71E84DB7300344598 /* soapH.h */; };
+		C156B54F1E84DB7300344598 /* soapImagingBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4E81E84DB7300344598 /* soapImagingBindingProxy.cpp */; };
+		C156B5501E84DB7300344598 /* soapImagingBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4E91E84DB7300344598 /* soapImagingBindingProxy.h */; };
+		C156B5511E84DB7300344598 /* soapImagingBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4EA1E84DB7300344598 /* soapImagingBindingService.cpp */; };
+		C156B5521E84DB7300344598 /* soapImagingBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4EB1E84DB7300344598 /* soapImagingBindingService.h */; };
+		C156B5531E84DB7300344598 /* soapMediaBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4EC1E84DB7300344598 /* soapMediaBindingProxy.cpp */; };
+		C156B5541E84DB7300344598 /* soapMediaBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4ED1E84DB7300344598 /* soapMediaBindingProxy.h */; };
+		C156B5551E84DB7300344598 /* soapMediaBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4EE1E84DB7300344598 /* soapMediaBindingService.cpp */; };
+		C156B5561E84DB7300344598 /* soapMediaBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4EF1E84DB7300344598 /* soapMediaBindingService.h */; };
+		C156B5571E84DB7300344598 /* soapNotificationConsumerBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4F01E84DB7300344598 /* soapNotificationConsumerBindingProxy.cpp */; };
+		C156B5581E84DB7300344598 /* soapNotificationConsumerBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4F11E84DB7300344598 /* soapNotificationConsumerBindingProxy.h */; };
+		C156B5591E84DB7300344598 /* soapNotificationConsumerBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4F21E84DB7300344598 /* soapNotificationConsumerBindingService.cpp */; };
+		C156B55A1E84DB7300344598 /* soapNotificationConsumerBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4F31E84DB7300344598 /* soapNotificationConsumerBindingService.h */; };
+		C156B55B1E84DB7300344598 /* soapNotificationProducerBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4F41E84DB7300344598 /* soapNotificationProducerBindingProxy.cpp */; };
+		C156B55C1E84DB7300344598 /* soapNotificationProducerBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4F51E84DB7300344598 /* soapNotificationProducerBindingProxy.h */; };
+		C156B55D1E84DB7300344598 /* soapNotificationProducerBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4F61E84DB7300344598 /* soapNotificationProducerBindingService.cpp */; };
+		C156B55E1E84DB7300344598 /* soapNotificationProducerBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4F71E84DB7300344598 /* soapNotificationProducerBindingService.h */; };
+		C156B55F1E84DB7300344598 /* soapPausableSubscriptionManagerBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4F81E84DB7300344598 /* soapPausableSubscriptionManagerBindingProxy.cpp */; };
+		C156B5601E84DB7300344598 /* soapPausableSubscriptionManagerBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4F91E84DB7300344598 /* soapPausableSubscriptionManagerBindingProxy.h */; };
+		C156B5611E84DB7300344598 /* soapPausableSubscriptionManagerBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4FA1E84DB7300344598 /* soapPausableSubscriptionManagerBindingService.cpp */; };
+		C156B5621E84DB7300344598 /* soapPausableSubscriptionManagerBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4FB1E84DB7300344598 /* soapPausableSubscriptionManagerBindingService.h */; };
+		C156B5631E84DB7300344598 /* soapPTZBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4FC1E84DB7300344598 /* soapPTZBindingProxy.cpp */; };
+		C156B5641E84DB7300344598 /* soapPTZBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4FD1E84DB7300344598 /* soapPTZBindingProxy.h */; };
+		C156B5651E84DB7300344598 /* soapPTZBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4FE1E84DB7300344598 /* soapPTZBindingService.cpp */; };
+		C156B5661E84DB7300344598 /* soapPTZBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4FF1E84DB7300344598 /* soapPTZBindingService.h */; };
+		C156B5671E84DB7300344598 /* soapPullPointBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5001E84DB7300344598 /* soapPullPointBindingProxy.cpp */; };
+		C156B5681E84DB7300344598 /* soapPullPointBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5011E84DB7300344598 /* soapPullPointBindingProxy.h */; };
+		C156B5691E84DB7300344598 /* soapPullPointBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5021E84DB7300344598 /* soapPullPointBindingService.cpp */; };
+		C156B56A1E84DB7300344598 /* soapPullPointBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5031E84DB7300344598 /* soapPullPointBindingService.h */; };
+		C156B56B1E84DB7300344598 /* soapPullPointSubscriptionBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5041E84DB7300344598 /* soapPullPointSubscriptionBindingProxy.cpp */; };
+		C156B56C1E84DB7300344598 /* soapPullPointSubscriptionBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5051E84DB7300344598 /* soapPullPointSubscriptionBindingProxy.h */; };
+		C156B56D1E84DB7300344598 /* soapPullPointSubscriptionBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5061E84DB7300344598 /* soapPullPointSubscriptionBindingService.cpp */; };
+		C156B56E1E84DB7300344598 /* soapPullPointSubscriptionBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5071E84DB7300344598 /* soapPullPointSubscriptionBindingService.h */; };
+		C156B56F1E84DB7300344598 /* soapReceiverBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5081E84DB7300344598 /* soapReceiverBindingProxy.cpp */; };
+		C156B5701E84DB7300344598 /* soapReceiverBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5091E84DB7300344598 /* soapReceiverBindingProxy.h */; };
+		C156B5711E84DB7300344598 /* soapReceiverBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B50A1E84DB7300344598 /* soapReceiverBindingService.cpp */; };
+		C156B5721E84DB7300344598 /* soapReceiverBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B50B1E84DB7300344598 /* soapReceiverBindingService.h */; };
+		C156B5731E84DB7300344598 /* soapRecordingBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B50C1E84DB7300344598 /* soapRecordingBindingProxy.cpp */; };
+		C156B5741E84DB7300344598 /* soapRecordingBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B50D1E84DB7300344598 /* soapRecordingBindingProxy.h */; };
+		C156B5751E84DB7300344598 /* soapRecordingBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B50E1E84DB7300344598 /* soapRecordingBindingService.cpp */; };
+		C156B5761E84DB7300344598 /* soapRecordingBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B50F1E84DB7300344598 /* soapRecordingBindingService.h */; };
+		C156B5771E84DB7300344598 /* soapRemoteDiscoveryBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5101E84DB7300344598 /* soapRemoteDiscoveryBindingProxy.cpp */; };
+		C156B5781E84DB7300344598 /* soapRemoteDiscoveryBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5111E84DB7300344598 /* soapRemoteDiscoveryBindingProxy.h */; };
+		C156B5791E84DB7300344598 /* soapRemoteDiscoveryBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5121E84DB7300344598 /* soapRemoteDiscoveryBindingService.cpp */; };
+		C156B57A1E84DB7300344598 /* soapRemoteDiscoveryBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5131E84DB7300344598 /* soapRemoteDiscoveryBindingService.h */; };
+		C156B57B1E84DB7300344598 /* soapReplayBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5141E84DB7300344598 /* soapReplayBindingProxy.cpp */; };
+		C156B57C1E84DB7300344598 /* soapReplayBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5151E84DB7300344598 /* soapReplayBindingProxy.h */; };
+		C156B57D1E84DB7300344598 /* soapReplayBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5161E84DB7300344598 /* soapReplayBindingService.cpp */; };
+		C156B57E1E84DB7300344598 /* soapReplayBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5171E84DB7300344598 /* soapReplayBindingService.h */; };
+		C156B57F1E84DB7300344598 /* soapSearchBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5181E84DB7300344598 /* soapSearchBindingProxy.cpp */; };
+		C156B5801E84DB7300344598 /* soapSearchBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5191E84DB7300344598 /* soapSearchBindingProxy.h */; };
+		C156B5811E84DB7300344598 /* soapSearchBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B51A1E84DB7300344598 /* soapSearchBindingService.cpp */; };
+		C156B5821E84DB7300344598 /* soapSearchBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B51B1E84DB7300344598 /* soapSearchBindingService.h */; };
+		C156B5831E84DB7300344598 /* soapStub.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B51C1E84DB7300344598 /* soapStub.h */; };
+		C156B5841E84DB7300344598 /* soapSubscriptionManagerBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B51D1E84DB7300344598 /* soapSubscriptionManagerBindingProxy.cpp */; };
+		C156B5851E84DB7300344598 /* soapSubscriptionManagerBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B51E1E84DB7300344598 /* soapSubscriptionManagerBindingProxy.h */; };
+		C156B5861E84DB7300344598 /* soapSubscriptionManagerBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B51F1E84DB7300344598 /* soapSubscriptionManagerBindingService.cpp */; };
+		C156B5871E84DB7300344598 /* soapSubscriptionManagerBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5201E84DB7300344598 /* soapSubscriptionManagerBindingService.h */; };
+		C156B5981E84F77800344598 /* stdsoap2.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5911E84F77800344598 /* stdsoap2.h */; };
+		C156B5AA1E85109700344598 /* dom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B59C1E85109700344598 /* dom.cpp */; };
+		C156B5AB1E85109700344598 /* duration.c in Sources */ = {isa = PBXBuildFile; fileRef = C156B59D1E85109700344598 /* duration.c */; };
+		C156B5AC1E85109700344598 /* duration.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B59E1E85109700344598 /* duration.h */; };
+		C156B5AF1E85109700344598 /* smdevp.c in Sources */ = {isa = PBXBuildFile; fileRef = C156B5A11E85109700344598 /* smdevp.c */; };
+		C156B5B01E85109700344598 /* smdevp.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5A21E85109700344598 /* smdevp.h */; };
+		C156B5B11E85109700344598 /* threads.c in Sources */ = {isa = PBXBuildFile; fileRef = C156B5A31E85109700344598 /* threads.c */; };
+		C156B5B21E85109700344598 /* threads.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5A41E85109700344598 /* threads.h */; };
+		C156B5B31E85109700344598 /* wsaapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C156B5A51E85109700344598 /* wsaapi.c */; };
+		C156B5B41E85109700344598 /* wsaapi.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5A61E85109700344598 /* wsaapi.h */; };
+		C156B5B61E85109700344598 /* wsseapi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5A81E85109700344598 /* wsseapi.cpp */; };
+		C156B5B71E85109700344598 /* wsseapi.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5A91E85109700344598 /* wsseapi.h */; };
+		D591A7541E85BE8A006D744B /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D591A7521E85BE8A006D744B /* libcrypto.a */; };
+		D591A7551E85BE8A006D744B /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D591A7531E85BE8A006D744B /* libssl.a */; };
+		D591A8441E85E225006D744B /* iOSOnvif.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D591A8411E85E225006D744B /* iOSOnvif.h */; };
+		D591A8491E85E24D006D744B /* iOSOnvif.mm in Sources */ = {isa = PBXBuildFile; fileRef = D591A8481E85E24D006D744B /* iOSOnvif.mm */; };
+		D591A84A1E85E260006D744B /* dom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B59C1E85109700344598 /* dom.cpp */; };
+		D591A84B1E85E270006D744B /* soapC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4CE1E84DB7300344598 /* soapC.cpp */; };
+		D591A84C1E85E270006D744B /* soapCreatePullPointBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4CF1E84DB7300344598 /* soapCreatePullPointBindingProxy.cpp */; };
+		D591A84D1E85E270006D744B /* soapCreatePullPointBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4D11E84DB7300344598 /* soapCreatePullPointBindingService.cpp */; };
+		D591A84E1E85E270006D744B /* soapDeviceBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4D31E84DB7300344598 /* soapDeviceBindingProxy.cpp */; };
+		D591A84F1E85E270006D744B /* soapDeviceBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4D51E84DB7300344598 /* soapDeviceBindingService.cpp */; };
+		D591A8501E85E270006D744B /* soapDeviceIOBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4D71E84DB7300344598 /* soapDeviceIOBindingProxy.cpp */; };
+		D591A8511E85E270006D744B /* soapDeviceIOBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4D91E84DB7300344598 /* soapDeviceIOBindingService.cpp */; };
+		D591A8521E85E270006D744B /* soapDiscoveryLookupBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4DB1E84DB7300344598 /* soapDiscoveryLookupBindingProxy.cpp */; };
+		D591A8531E85E270006D744B /* soapDiscoveryLookupBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4DD1E84DB7300344598 /* soapDiscoveryLookupBindingService.cpp */; };
+		D591A8541E85E270006D744B /* soapDisplayBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4DF1E84DB7300344598 /* soapDisplayBindingProxy.cpp */; };
+		D591A8551E85E270006D744B /* soapDisplayBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4E11E84DB7300344598 /* soapDisplayBindingService.cpp */; };
+		D591A8561E85E270006D744B /* soapEventBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4E31E84DB7300344598 /* soapEventBindingProxy.cpp */; };
+		D591A8571E85E270006D744B /* soapEventBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4E51E84DB7300344598 /* soapEventBindingService.cpp */; };
+		D591A8581E85E270006D744B /* soapImagingBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4E81E84DB7300344598 /* soapImagingBindingProxy.cpp */; };
+		D591A8591E85E270006D744B /* soapImagingBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4EA1E84DB7300344598 /* soapImagingBindingService.cpp */; };
+		D591A85A1E85E270006D744B /* soapMediaBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4EC1E84DB7300344598 /* soapMediaBindingProxy.cpp */; };
+		D591A85B1E85E270006D744B /* soapMediaBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4EE1E84DB7300344598 /* soapMediaBindingService.cpp */; };
+		D591A85C1E85E270006D744B /* soapNotificationConsumerBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4F01E84DB7300344598 /* soapNotificationConsumerBindingProxy.cpp */; };
+		D591A85D1E85E270006D744B /* soapNotificationConsumerBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4F21E84DB7300344598 /* soapNotificationConsumerBindingService.cpp */; };
+		D591A85E1E85E270006D744B /* soapNotificationProducerBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4F41E84DB7300344598 /* soapNotificationProducerBindingProxy.cpp */; };
+		D591A85F1E85E270006D744B /* soapNotificationProducerBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4F61E84DB7300344598 /* soapNotificationProducerBindingService.cpp */; };
+		D591A8601E85E270006D744B /* soapPausableSubscriptionManagerBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4F81E84DB7300344598 /* soapPausableSubscriptionManagerBindingProxy.cpp */; };
+		D591A8611E85E270006D744B /* soapPausableSubscriptionManagerBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4FA1E84DB7300344598 /* soapPausableSubscriptionManagerBindingService.cpp */; };
+		D591A8621E85E270006D744B /* soapPTZBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4FC1E84DB7300344598 /* soapPTZBindingProxy.cpp */; };
+		D591A8631E85E270006D744B /* soapPTZBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4FE1E84DB7300344598 /* soapPTZBindingService.cpp */; };
+		D591A8641E85E270006D744B /* soapPullPointBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5001E84DB7300344598 /* soapPullPointBindingProxy.cpp */; };
+		D591A8651E85E270006D744B /* soapPullPointBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5021E84DB7300344598 /* soapPullPointBindingService.cpp */; };
+		D591A8661E85E270006D744B /* soapPullPointSubscriptionBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5041E84DB7300344598 /* soapPullPointSubscriptionBindingProxy.cpp */; };
+		D591A8671E85E270006D744B /* soapPullPointSubscriptionBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5061E84DB7300344598 /* soapPullPointSubscriptionBindingService.cpp */; };
+		D591A8681E85E270006D744B /* soapReceiverBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5081E84DB7300344598 /* soapReceiverBindingProxy.cpp */; };
+		D591A8691E85E270006D744B /* soapReceiverBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B50A1E84DB7300344598 /* soapReceiverBindingService.cpp */; };
+		D591A86A1E85E270006D744B /* soapRecordingBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B50C1E84DB7300344598 /* soapRecordingBindingProxy.cpp */; };
+		D591A86B1E85E270006D744B /* soapRecordingBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B50E1E84DB7300344598 /* soapRecordingBindingService.cpp */; };
+		D591A86C1E85E270006D744B /* soapRemoteDiscoveryBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5101E84DB7300344598 /* soapRemoteDiscoveryBindingProxy.cpp */; };
+		D591A86D1E85E270006D744B /* soapRemoteDiscoveryBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5121E84DB7300344598 /* soapRemoteDiscoveryBindingService.cpp */; };
+		D591A86E1E85E270006D744B /* soapReplayBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5141E84DB7300344598 /* soapReplayBindingProxy.cpp */; };
+		D591A86F1E85E270006D744B /* soapReplayBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5161E84DB7300344598 /* soapReplayBindingService.cpp */; };
+		D591A8701E85E270006D744B /* soapSearchBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5181E84DB7300344598 /* soapSearchBindingProxy.cpp */; };
+		D591A8711E85E270006D744B /* soapSearchBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B51A1E84DB7300344598 /* soapSearchBindingService.cpp */; };
+		D591A8721E85E270006D744B /* soapSubscriptionManagerBindingProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B51D1E84DB7300344598 /* soapSubscriptionManagerBindingProxy.cpp */; };
+		D591A8731E85E270006D744B /* soapSubscriptionManagerBindingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B51F1E84DB7300344598 /* soapSubscriptionManagerBindingService.cpp */; };
+		D591A8741E85E270006D744B /* wsseapi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5A81E85109700344598 /* wsseapi.cpp */; };
+		D591A8751E85E270006D744B /* stdsoap2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B4801E84DB6000344598 /* stdsoap2.cpp */; };
+		D591A8761E85E279006D744B /* duration.c in Sources */ = {isa = PBXBuildFile; fileRef = C156B59D1E85109700344598 /* duration.c */; };
+		D591A8771E85E279006D744B /* smdevp.c in Sources */ = {isa = PBXBuildFile; fileRef = C156B5A11E85109700344598 /* smdevp.c */; };
+		D591A8781E85E279006D744B /* threads.c in Sources */ = {isa = PBXBuildFile; fileRef = C156B5A31E85109700344598 /* threads.c */; };
+		D591A8791E85E279006D744B /* wsaapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C156B5A51E85109700344598 /* wsaapi.c */; };
+		D591A87B1E85E31F006D744B /* libssl.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = D591A7531E85BE8A006D744B /* libssl.a */; };
+		D591A87C1E85E327006D744B /* libcrypto.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = D591A7521E85BE8A006D744B /* libcrypto.a */; };
+		D591A8861E85F25E006D744B /* iOSOnvifFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D591A8841E85F25E006D744B /* iOSOnvifFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D591A88E1E85F513006D744B /* iOSOnvifFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D591A8821E85F25E006D744B /* iOSOnvifFramework.framework */; };
+		D591A8AA1E85F6BE006D744B /* iOSOnvifFrameworkTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = D591A8951E85F5B2006D744B /* iOSOnvifFrameworkTests.mm */; };
+		D591A8AB1E85F82B006D744B /* libiOSOnvif.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D591A83F1E85E224006D744B /* libiOSOnvif.a */; };
+		D591A8AE1E85F8BB006D744B /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D591A7521E85BE8A006D744B /* libcrypto.a */; };
+		D591A8AF1E85F8BB006D744B /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D591A7531E85BE8A006D744B /* libssl.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D591A88A1E85F272006D744B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C156B4311E84DB0600344598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D591A83E1E85E224006D744B;
+			remoteInfo = iOSOnvif;
+		};
+		D591A88C1E85F2BD006D744B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C156B4311E84DB0600344598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D591A8811E85F25E006D744B;
+			remoteInfo = iOSOnvifFramework;
+		};
+		D591A8AC1E85F82E006D744B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C156B4311E84DB0600344598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D591A83E1E85E224006D744B;
+			remoteInfo = iOSOnvif;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D591A83D1E85E224006D744B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D591A8441E85E225006D744B /* iOSOnvif.h in CopyFiles */,
+				D591A87B1E85E31F006D744B /* libssl.a in CopyFiles */,
+				D591A87C1E85E327006D744B /* libcrypto.a in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C156B43A1E84DB0600344598 /* OnvifFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnvifFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C156B43D1E84DB0600344598 /* OnvifFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnvifFramework.h; sourceTree = "<group>"; };
+		C156B43E1E84DB0600344598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C156B4431E84DB0600344598 /* OnvifFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnvifFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C156B4481E84DB0600344598 /* OnvifFrameworkTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OnvifFrameworkTests.mm; sourceTree = "<group>"; };
+		C156B44A1E84DB0600344598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C156B4801E84DB6000344598 /* stdsoap2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdsoap2.cpp; sourceTree = "<group>"; };
+		C156B4981E84DB6B00344598 /* onvifclient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifclient.hpp; sourceTree = "<group>"; };
+		C156B4991E84DB6B00344598 /* onvifclientdevice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifclientdevice.hpp; sourceTree = "<group>"; };
+		C156B49A1E84DB6B00344598 /* onvifclientevent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifclientevent.hpp; sourceTree = "<group>"; };
+		C156B49B1E84DB6B00344598 /* onvifclientimaging.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifclientimaging.hpp; sourceTree = "<group>"; };
+		C156B49C1E84DB6B00344598 /* onvifclientmedia.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifclientmedia.hpp; sourceTree = "<group>"; };
+		C156B49D1E84DB6B00344598 /* onvifclientptz.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifclientptz.hpp; sourceTree = "<group>"; };
+		C156B49E1E84DB6B00344598 /* onvifclientreceiver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifclientreceiver.hpp; sourceTree = "<group>"; };
+		C156B49F1E84DB6B00344598 /* onvifclientrecording.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifclientrecording.hpp; sourceTree = "<group>"; };
+		C156B4A01E84DB6B00344598 /* onvifclientremotediscovery.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifclientremotediscovery.hpp; sourceTree = "<group>"; };
+		C156B4A11E84DB6B00344598 /* onvifclientreplay.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifclientreplay.hpp; sourceTree = "<group>"; };
+		C156B4A21E84DB6B00344598 /* onvifclientsearch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifclientsearch.hpp; sourceTree = "<group>"; };
+		C156B4A31E84DB6B00344598 /* onvifserver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifserver.hpp; sourceTree = "<group>"; };
+		C156B4A41E84DB6B00344598 /* onvifserverdevice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifserverdevice.hpp; sourceTree = "<group>"; };
+		C156B4A51E84DB6B00344598 /* onvifserverdiscover.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifserverdiscover.hpp; sourceTree = "<group>"; };
+		C156B4A61E84DB6B00344598 /* onvifserverevent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifserverevent.hpp; sourceTree = "<group>"; };
+		C156B4A71E84DB6B00344598 /* onvifservermedia.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifservermedia.hpp; sourceTree = "<group>"; };
+		C156B4A81E84DB6B00344598 /* onvifserverreceiver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = onvifserverreceiver.hpp; sourceTree = "<group>"; };
+		C156B4CE1E84DB7300344598 /* soapC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapC.cpp; sourceTree = "<group>"; };
+		C156B4CF1E84DB7300344598 /* soapCreatePullPointBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapCreatePullPointBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B4D01E84DB7300344598 /* soapCreatePullPointBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapCreatePullPointBindingProxy.h; sourceTree = "<group>"; };
+		C156B4D11E84DB7300344598 /* soapCreatePullPointBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapCreatePullPointBindingService.cpp; sourceTree = "<group>"; };
+		C156B4D21E84DB7300344598 /* soapCreatePullPointBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapCreatePullPointBindingService.h; sourceTree = "<group>"; };
+		C156B4D31E84DB7300344598 /* soapDeviceBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapDeviceBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B4D41E84DB7300344598 /* soapDeviceBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapDeviceBindingProxy.h; sourceTree = "<group>"; };
+		C156B4D51E84DB7300344598 /* soapDeviceBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapDeviceBindingService.cpp; sourceTree = "<group>"; };
+		C156B4D61E84DB7300344598 /* soapDeviceBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapDeviceBindingService.h; sourceTree = "<group>"; };
+		C156B4D71E84DB7300344598 /* soapDeviceIOBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapDeviceIOBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B4D81E84DB7300344598 /* soapDeviceIOBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapDeviceIOBindingProxy.h; sourceTree = "<group>"; };
+		C156B4D91E84DB7300344598 /* soapDeviceIOBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapDeviceIOBindingService.cpp; sourceTree = "<group>"; };
+		C156B4DA1E84DB7300344598 /* soapDeviceIOBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapDeviceIOBindingService.h; sourceTree = "<group>"; };
+		C156B4DB1E84DB7300344598 /* soapDiscoveryLookupBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapDiscoveryLookupBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B4DC1E84DB7300344598 /* soapDiscoveryLookupBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapDiscoveryLookupBindingProxy.h; sourceTree = "<group>"; };
+		C156B4DD1E84DB7300344598 /* soapDiscoveryLookupBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapDiscoveryLookupBindingService.cpp; sourceTree = "<group>"; };
+		C156B4DE1E84DB7300344598 /* soapDiscoveryLookupBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapDiscoveryLookupBindingService.h; sourceTree = "<group>"; };
+		C156B4DF1E84DB7300344598 /* soapDisplayBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapDisplayBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B4E01E84DB7300344598 /* soapDisplayBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapDisplayBindingProxy.h; sourceTree = "<group>"; };
+		C156B4E11E84DB7300344598 /* soapDisplayBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapDisplayBindingService.cpp; sourceTree = "<group>"; };
+		C156B4E21E84DB7300344598 /* soapDisplayBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapDisplayBindingService.h; sourceTree = "<group>"; };
+		C156B4E31E84DB7300344598 /* soapEventBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapEventBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B4E41E84DB7300344598 /* soapEventBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapEventBindingProxy.h; sourceTree = "<group>"; };
+		C156B4E51E84DB7300344598 /* soapEventBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapEventBindingService.cpp; sourceTree = "<group>"; };
+		C156B4E61E84DB7300344598 /* soapEventBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapEventBindingService.h; sourceTree = "<group>"; };
+		C156B4E71E84DB7300344598 /* soapH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapH.h; sourceTree = "<group>"; };
+		C156B4E81E84DB7300344598 /* soapImagingBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapImagingBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B4E91E84DB7300344598 /* soapImagingBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapImagingBindingProxy.h; sourceTree = "<group>"; };
+		C156B4EA1E84DB7300344598 /* soapImagingBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapImagingBindingService.cpp; sourceTree = "<group>"; };
+		C156B4EB1E84DB7300344598 /* soapImagingBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapImagingBindingService.h; sourceTree = "<group>"; };
+		C156B4EC1E84DB7300344598 /* soapMediaBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapMediaBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B4ED1E84DB7300344598 /* soapMediaBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapMediaBindingProxy.h; sourceTree = "<group>"; };
+		C156B4EE1E84DB7300344598 /* soapMediaBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapMediaBindingService.cpp; sourceTree = "<group>"; };
+		C156B4EF1E84DB7300344598 /* soapMediaBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapMediaBindingService.h; sourceTree = "<group>"; };
+		C156B4F01E84DB7300344598 /* soapNotificationConsumerBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapNotificationConsumerBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B4F11E84DB7300344598 /* soapNotificationConsumerBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapNotificationConsumerBindingProxy.h; sourceTree = "<group>"; };
+		C156B4F21E84DB7300344598 /* soapNotificationConsumerBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapNotificationConsumerBindingService.cpp; sourceTree = "<group>"; };
+		C156B4F31E84DB7300344598 /* soapNotificationConsumerBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapNotificationConsumerBindingService.h; sourceTree = "<group>"; };
+		C156B4F41E84DB7300344598 /* soapNotificationProducerBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapNotificationProducerBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B4F51E84DB7300344598 /* soapNotificationProducerBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapNotificationProducerBindingProxy.h; sourceTree = "<group>"; };
+		C156B4F61E84DB7300344598 /* soapNotificationProducerBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapNotificationProducerBindingService.cpp; sourceTree = "<group>"; };
+		C156B4F71E84DB7300344598 /* soapNotificationProducerBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapNotificationProducerBindingService.h; sourceTree = "<group>"; };
+		C156B4F81E84DB7300344598 /* soapPausableSubscriptionManagerBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapPausableSubscriptionManagerBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B4F91E84DB7300344598 /* soapPausableSubscriptionManagerBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapPausableSubscriptionManagerBindingProxy.h; sourceTree = "<group>"; };
+		C156B4FA1E84DB7300344598 /* soapPausableSubscriptionManagerBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapPausableSubscriptionManagerBindingService.cpp; sourceTree = "<group>"; };
+		C156B4FB1E84DB7300344598 /* soapPausableSubscriptionManagerBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapPausableSubscriptionManagerBindingService.h; sourceTree = "<group>"; };
+		C156B4FC1E84DB7300344598 /* soapPTZBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapPTZBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B4FD1E84DB7300344598 /* soapPTZBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapPTZBindingProxy.h; sourceTree = "<group>"; };
+		C156B4FE1E84DB7300344598 /* soapPTZBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapPTZBindingService.cpp; sourceTree = "<group>"; };
+		C156B4FF1E84DB7300344598 /* soapPTZBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapPTZBindingService.h; sourceTree = "<group>"; };
+		C156B5001E84DB7300344598 /* soapPullPointBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapPullPointBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B5011E84DB7300344598 /* soapPullPointBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapPullPointBindingProxy.h; sourceTree = "<group>"; };
+		C156B5021E84DB7300344598 /* soapPullPointBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapPullPointBindingService.cpp; sourceTree = "<group>"; };
+		C156B5031E84DB7300344598 /* soapPullPointBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapPullPointBindingService.h; sourceTree = "<group>"; };
+		C156B5041E84DB7300344598 /* soapPullPointSubscriptionBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapPullPointSubscriptionBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B5051E84DB7300344598 /* soapPullPointSubscriptionBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapPullPointSubscriptionBindingProxy.h; sourceTree = "<group>"; };
+		C156B5061E84DB7300344598 /* soapPullPointSubscriptionBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapPullPointSubscriptionBindingService.cpp; sourceTree = "<group>"; };
+		C156B5071E84DB7300344598 /* soapPullPointSubscriptionBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapPullPointSubscriptionBindingService.h; sourceTree = "<group>"; };
+		C156B5081E84DB7300344598 /* soapReceiverBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapReceiverBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B5091E84DB7300344598 /* soapReceiverBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapReceiverBindingProxy.h; sourceTree = "<group>"; };
+		C156B50A1E84DB7300344598 /* soapReceiverBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapReceiverBindingService.cpp; sourceTree = "<group>"; };
+		C156B50B1E84DB7300344598 /* soapReceiverBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapReceiverBindingService.h; sourceTree = "<group>"; };
+		C156B50C1E84DB7300344598 /* soapRecordingBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapRecordingBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B50D1E84DB7300344598 /* soapRecordingBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapRecordingBindingProxy.h; sourceTree = "<group>"; };
+		C156B50E1E84DB7300344598 /* soapRecordingBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapRecordingBindingService.cpp; sourceTree = "<group>"; };
+		C156B50F1E84DB7300344598 /* soapRecordingBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapRecordingBindingService.h; sourceTree = "<group>"; };
+		C156B5101E84DB7300344598 /* soapRemoteDiscoveryBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapRemoteDiscoveryBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B5111E84DB7300344598 /* soapRemoteDiscoveryBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapRemoteDiscoveryBindingProxy.h; sourceTree = "<group>"; };
+		C156B5121E84DB7300344598 /* soapRemoteDiscoveryBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapRemoteDiscoveryBindingService.cpp; sourceTree = "<group>"; };
+		C156B5131E84DB7300344598 /* soapRemoteDiscoveryBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapRemoteDiscoveryBindingService.h; sourceTree = "<group>"; };
+		C156B5141E84DB7300344598 /* soapReplayBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapReplayBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B5151E84DB7300344598 /* soapReplayBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapReplayBindingProxy.h; sourceTree = "<group>"; };
+		C156B5161E84DB7300344598 /* soapReplayBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapReplayBindingService.cpp; sourceTree = "<group>"; };
+		C156B5171E84DB7300344598 /* soapReplayBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapReplayBindingService.h; sourceTree = "<group>"; };
+		C156B5181E84DB7300344598 /* soapSearchBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapSearchBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B5191E84DB7300344598 /* soapSearchBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapSearchBindingProxy.h; sourceTree = "<group>"; };
+		C156B51A1E84DB7300344598 /* soapSearchBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapSearchBindingService.cpp; sourceTree = "<group>"; };
+		C156B51B1E84DB7300344598 /* soapSearchBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapSearchBindingService.h; sourceTree = "<group>"; };
+		C156B51C1E84DB7300344598 /* soapStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapStub.h; sourceTree = "<group>"; };
+		C156B51D1E84DB7300344598 /* soapSubscriptionManagerBindingProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapSubscriptionManagerBindingProxy.cpp; sourceTree = "<group>"; };
+		C156B51E1E84DB7300344598 /* soapSubscriptionManagerBindingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapSubscriptionManagerBindingProxy.h; sourceTree = "<group>"; };
+		C156B51F1E84DB7300344598 /* soapSubscriptionManagerBindingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soapSubscriptionManagerBindingService.cpp; sourceTree = "<group>"; };
+		C156B5201E84DB7300344598 /* soapSubscriptionManagerBindingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapSubscriptionManagerBindingService.h; sourceTree = "<group>"; };
+		C156B58A1E84DBC900344598 /* libcrypto.1.0.2h.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.1.0.2h.a; path = ../../../NCG_Git/3rd_Party_Library/openssl_static/iOS_lib/libcrypto.1.0.2h.a; sourceTree = "<group>"; };
+		C156B58B1E84DBC900344598 /* libssl.1.0.2h.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.1.0.2h.a; path = ../../../NCG_Git/3rd_Party_Library/openssl_static/iOS_lib/libssl.1.0.2h.a; sourceTree = "<group>"; };
+		C156B5911E84F77800344598 /* stdsoap2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdsoap2.h; sourceTree = "<group>"; };
+		C156B59C1E85109700344598 /* dom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dom.cpp; sourceTree = "<group>"; };
+		C156B59D1E85109700344598 /* duration.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = duration.c; sourceTree = "<group>"; };
+		C156B59E1E85109700344598 /* duration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = duration.h; sourceTree = "<group>"; };
+		C156B5A11E85109700344598 /* smdevp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smdevp.c; sourceTree = "<group>"; };
+		C156B5A21E85109700344598 /* smdevp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smdevp.h; sourceTree = "<group>"; };
+		C156B5A31E85109700344598 /* threads.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = threads.c; sourceTree = "<group>"; };
+		C156B5A41E85109700344598 /* threads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threads.h; sourceTree = "<group>"; };
+		C156B5A51E85109700344598 /* wsaapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wsaapi.c; sourceTree = "<group>"; };
+		C156B5A61E85109700344598 /* wsaapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wsaapi.h; sourceTree = "<group>"; };
+		C156B5A81E85109700344598 /* wsseapi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wsseapi.cpp; sourceTree = "<group>"; };
+		C156B5A91E85109700344598 /* wsseapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wsseapi.h; sourceTree = "<group>"; };
+		D591A7521E85BE8A006D744B /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "OpenSSL-master/lib-ios/libcrypto.a"; sourceTree = "<group>"; };
+		D591A7531E85BE8A006D744B /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "OpenSSL-master/lib-ios/libssl.a"; sourceTree = "<group>"; };
+		D591A7561E85C67C006D744B /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		D591A83F1E85E224006D744B /* libiOSOnvif.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSOnvif.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D591A8411E85E225006D744B /* iOSOnvif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSOnvif.h; sourceTree = "<group>"; };
+		D591A8481E85E24D006D744B /* iOSOnvif.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iOSOnvif.mm; sourceTree = "<group>"; };
+		D591A8821E85F25E006D744B /* iOSOnvifFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSOnvifFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D591A8841E85F25E006D744B /* iOSOnvifFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSOnvifFramework.h; sourceTree = "<group>"; };
+		D591A8851E85F25E006D744B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D591A8951E85F5B2006D744B /* iOSOnvifFrameworkTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = iOSOnvifFrameworkTests.mm; sourceTree = "<group>"; };
+		D591A8971E85F5B2006D744B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D591A89F1E85F5CC006D744B /* iOSOnvifFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSOnvifFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C156B4361E84DB0600344598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D591A7541E85BE8A006D744B /* libcrypto.a in Frameworks */,
+				D591A7551E85BE8A006D744B /* libssl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C156B4401E84DB0600344598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D591A88E1E85F513006D744B /* iOSOnvifFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D591A83C1E85E224006D744B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D591A8AE1E85F8BB006D744B /* libcrypto.a in Frameworks */,
+				D591A8AF1E85F8BB006D744B /* libssl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D591A87E1E85F25E006D744B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D591A89C1E85F5CC006D744B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D591A8AB1E85F82B006D744B /* libiOSOnvif.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C156B4301E84DB0600344598 = {
+			isa = PBXGroup;
+			children = (
+				D591A8831E85F25E006D744B /* iOSOnvifFramework */,
+				D591A8401E85E225006D744B /* iOSOnvif */,
+				C156B43C1E84DB0600344598 /* OnvifFramework */,
+				C156B4471E84DB0600344598 /* OnvifFrameworkTests */,
+				D591A8941E85F5B2006D744B /* iOSOnvifFrameworkTests */,
+				C156B43B1E84DB0600344598 /* Products */,
+				C156B5891E84DBC900344598 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C156B43B1E84DB0600344598 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C156B43A1E84DB0600344598 /* OnvifFramework.framework */,
+				C156B4431E84DB0600344598 /* OnvifFrameworkTests.xctest */,
+				D591A83F1E85E224006D744B /* libiOSOnvif.a */,
+				D591A8821E85F25E006D744B /* iOSOnvifFramework.framework */,
+				D591A89F1E85F5CC006D744B /* iOSOnvifFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C156B43C1E84DB0600344598 /* OnvifFramework */ = {
+			isa = PBXGroup;
+			children = (
+				C156B43D1E84DB0600344598 /* OnvifFramework.h */,
+				C156B43E1E84DB0600344598 /* Info.plist */,
+			);
+			path = OnvifFramework;
+			sourceTree = "<group>";
+		};
+		C156B4471E84DB0600344598 /* OnvifFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				C156B4481E84DB0600344598 /* OnvifFrameworkTests.mm */,
+				C156B44A1E84DB0600344598 /* Info.plist */,
+			);
+			path = OnvifFrameworkTests;
+			sourceTree = "<group>";
+		};
+		C156B4771E84DB6000344598 /* gsoap */ = {
+			isa = PBXGroup;
+			children = (
+				C156B4781E84DB6000344598 /* runtime */,
+			);
+			name = gsoap;
+			path = gsoap/gsoap;
+			sourceTree = SOURCE_ROOT;
+		};
+		C156B4781E84DB6000344598 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				C156B59C1E85109700344598 /* dom.cpp */,
+				C156B59D1E85109700344598 /* duration.c */,
+				C156B59E1E85109700344598 /* duration.h */,
+				C156B5A11E85109700344598 /* smdevp.c */,
+				C156B5A21E85109700344598 /* smdevp.h */,
+				C156B5A31E85109700344598 /* threads.c */,
+				C156B5A41E85109700344598 /* threads.h */,
+				C156B5A51E85109700344598 /* wsaapi.c */,
+				C156B5A61E85109700344598 /* wsaapi.h */,
+				C156B5A81E85109700344598 /* wsseapi.cpp */,
+				C156B5A91E85109700344598 /* wsseapi.h */,
+				C156B5911E84F77800344598 /* stdsoap2.h */,
+				C156B4801E84DB6000344598 /* stdsoap2.cpp */,
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
+		C156B4971E84DB6B00344598 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C156B4981E84DB6B00344598 /* onvifclient.hpp */,
+				C156B4991E84DB6B00344598 /* onvifclientdevice.hpp */,
+				C156B49A1E84DB6B00344598 /* onvifclientevent.hpp */,
+				C156B49B1E84DB6B00344598 /* onvifclientimaging.hpp */,
+				C156B49C1E84DB6B00344598 /* onvifclientmedia.hpp */,
+				C156B49D1E84DB6B00344598 /* onvifclientptz.hpp */,
+				C156B49E1E84DB6B00344598 /* onvifclientreceiver.hpp */,
+				C156B49F1E84DB6B00344598 /* onvifclientrecording.hpp */,
+				C156B4A01E84DB6B00344598 /* onvifclientremotediscovery.hpp */,
+				C156B4A11E84DB6B00344598 /* onvifclientreplay.hpp */,
+				C156B4A21E84DB6B00344598 /* onvifclientsearch.hpp */,
+				C156B4A31E84DB6B00344598 /* onvifserver.hpp */,
+				C156B4A41E84DB6B00344598 /* onvifserverdevice.hpp */,
+				C156B4A51E84DB6B00344598 /* onvifserverdiscover.hpp */,
+				C156B4A61E84DB6B00344598 /* onvifserverevent.hpp */,
+				C156B4A71E84DB6B00344598 /* onvifservermedia.hpp */,
+				C156B4A81E84DB6B00344598 /* onvifserverreceiver.hpp */,
+			);
+			path = include;
+			sourceTree = SOURCE_ROOT;
+		};
+		C156B4BA1E84DB7300344598 /* onvifgen */ = {
+			isa = PBXGroup;
+			children = (
+				C156B4CE1E84DB7300344598 /* soapC.cpp */,
+				C156B4CF1E84DB7300344598 /* soapCreatePullPointBindingProxy.cpp */,
+				C156B4D01E84DB7300344598 /* soapCreatePullPointBindingProxy.h */,
+				C156B4D11E84DB7300344598 /* soapCreatePullPointBindingService.cpp */,
+				C156B4D21E84DB7300344598 /* soapCreatePullPointBindingService.h */,
+				C156B4D31E84DB7300344598 /* soapDeviceBindingProxy.cpp */,
+				C156B4D41E84DB7300344598 /* soapDeviceBindingProxy.h */,
+				C156B4D51E84DB7300344598 /* soapDeviceBindingService.cpp */,
+				C156B4D61E84DB7300344598 /* soapDeviceBindingService.h */,
+				C156B4D71E84DB7300344598 /* soapDeviceIOBindingProxy.cpp */,
+				C156B4D81E84DB7300344598 /* soapDeviceIOBindingProxy.h */,
+				C156B4D91E84DB7300344598 /* soapDeviceIOBindingService.cpp */,
+				C156B4DA1E84DB7300344598 /* soapDeviceIOBindingService.h */,
+				C156B4DB1E84DB7300344598 /* soapDiscoveryLookupBindingProxy.cpp */,
+				C156B4DC1E84DB7300344598 /* soapDiscoveryLookupBindingProxy.h */,
+				C156B4DD1E84DB7300344598 /* soapDiscoveryLookupBindingService.cpp */,
+				C156B4DE1E84DB7300344598 /* soapDiscoveryLookupBindingService.h */,
+				C156B4DF1E84DB7300344598 /* soapDisplayBindingProxy.cpp */,
+				C156B4E01E84DB7300344598 /* soapDisplayBindingProxy.h */,
+				C156B4E11E84DB7300344598 /* soapDisplayBindingService.cpp */,
+				C156B4E21E84DB7300344598 /* soapDisplayBindingService.h */,
+				C156B4E31E84DB7300344598 /* soapEventBindingProxy.cpp */,
+				C156B4E41E84DB7300344598 /* soapEventBindingProxy.h */,
+				C156B4E51E84DB7300344598 /* soapEventBindingService.cpp */,
+				C156B4E61E84DB7300344598 /* soapEventBindingService.h */,
+				C156B4E71E84DB7300344598 /* soapH.h */,
+				C156B4E81E84DB7300344598 /* soapImagingBindingProxy.cpp */,
+				C156B4E91E84DB7300344598 /* soapImagingBindingProxy.h */,
+				C156B4EA1E84DB7300344598 /* soapImagingBindingService.cpp */,
+				C156B4EB1E84DB7300344598 /* soapImagingBindingService.h */,
+				C156B4EC1E84DB7300344598 /* soapMediaBindingProxy.cpp */,
+				C156B4ED1E84DB7300344598 /* soapMediaBindingProxy.h */,
+				C156B4EE1E84DB7300344598 /* soapMediaBindingService.cpp */,
+				C156B4EF1E84DB7300344598 /* soapMediaBindingService.h */,
+				C156B4F01E84DB7300344598 /* soapNotificationConsumerBindingProxy.cpp */,
+				C156B4F11E84DB7300344598 /* soapNotificationConsumerBindingProxy.h */,
+				C156B4F21E84DB7300344598 /* soapNotificationConsumerBindingService.cpp */,
+				C156B4F31E84DB7300344598 /* soapNotificationConsumerBindingService.h */,
+				C156B4F41E84DB7300344598 /* soapNotificationProducerBindingProxy.cpp */,
+				C156B4F51E84DB7300344598 /* soapNotificationProducerBindingProxy.h */,
+				C156B4F61E84DB7300344598 /* soapNotificationProducerBindingService.cpp */,
+				C156B4F71E84DB7300344598 /* soapNotificationProducerBindingService.h */,
+				C156B4F81E84DB7300344598 /* soapPausableSubscriptionManagerBindingProxy.cpp */,
+				C156B4F91E84DB7300344598 /* soapPausableSubscriptionManagerBindingProxy.h */,
+				C156B4FA1E84DB7300344598 /* soapPausableSubscriptionManagerBindingService.cpp */,
+				C156B4FB1E84DB7300344598 /* soapPausableSubscriptionManagerBindingService.h */,
+				C156B4FC1E84DB7300344598 /* soapPTZBindingProxy.cpp */,
+				C156B4FD1E84DB7300344598 /* soapPTZBindingProxy.h */,
+				C156B4FE1E84DB7300344598 /* soapPTZBindingService.cpp */,
+				C156B4FF1E84DB7300344598 /* soapPTZBindingService.h */,
+				C156B5001E84DB7300344598 /* soapPullPointBindingProxy.cpp */,
+				C156B5011E84DB7300344598 /* soapPullPointBindingProxy.h */,
+				C156B5021E84DB7300344598 /* soapPullPointBindingService.cpp */,
+				C156B5031E84DB7300344598 /* soapPullPointBindingService.h */,
+				C156B5041E84DB7300344598 /* soapPullPointSubscriptionBindingProxy.cpp */,
+				C156B5051E84DB7300344598 /* soapPullPointSubscriptionBindingProxy.h */,
+				C156B5061E84DB7300344598 /* soapPullPointSubscriptionBindingService.cpp */,
+				C156B5071E84DB7300344598 /* soapPullPointSubscriptionBindingService.h */,
+				C156B5081E84DB7300344598 /* soapReceiverBindingProxy.cpp */,
+				C156B5091E84DB7300344598 /* soapReceiverBindingProxy.h */,
+				C156B50A1E84DB7300344598 /* soapReceiverBindingService.cpp */,
+				C156B50B1E84DB7300344598 /* soapReceiverBindingService.h */,
+				C156B50C1E84DB7300344598 /* soapRecordingBindingProxy.cpp */,
+				C156B50D1E84DB7300344598 /* soapRecordingBindingProxy.h */,
+				C156B50E1E84DB7300344598 /* soapRecordingBindingService.cpp */,
+				C156B50F1E84DB7300344598 /* soapRecordingBindingService.h */,
+				C156B5101E84DB7300344598 /* soapRemoteDiscoveryBindingProxy.cpp */,
+				C156B5111E84DB7300344598 /* soapRemoteDiscoveryBindingProxy.h */,
+				C156B5121E84DB7300344598 /* soapRemoteDiscoveryBindingService.cpp */,
+				C156B5131E84DB7300344598 /* soapRemoteDiscoveryBindingService.h */,
+				C156B5141E84DB7300344598 /* soapReplayBindingProxy.cpp */,
+				C156B5151E84DB7300344598 /* soapReplayBindingProxy.h */,
+				C156B5161E84DB7300344598 /* soapReplayBindingService.cpp */,
+				C156B5171E84DB7300344598 /* soapReplayBindingService.h */,
+				C156B5181E84DB7300344598 /* soapSearchBindingProxy.cpp */,
+				C156B5191E84DB7300344598 /* soapSearchBindingProxy.h */,
+				C156B51A1E84DB7300344598 /* soapSearchBindingService.cpp */,
+				C156B51B1E84DB7300344598 /* soapSearchBindingService.h */,
+				C156B51C1E84DB7300344598 /* soapStub.h */,
+				C156B51D1E84DB7300344598 /* soapSubscriptionManagerBindingProxy.cpp */,
+				C156B51E1E84DB7300344598 /* soapSubscriptionManagerBindingProxy.h */,
+				C156B51F1E84DB7300344598 /* soapSubscriptionManagerBindingService.cpp */,
+				C156B5201E84DB7300344598 /* soapSubscriptionManagerBindingService.h */,
+			);
+			path = onvifgen;
+			sourceTree = SOURCE_ROOT;
+		};
+		C156B5891E84DBC900344598 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D591A7561E85C67C006D744B /* libstdc++.tbd */,
+				D591A7521E85BE8A006D744B /* libcrypto.a */,
+				D591A7531E85BE8A006D744B /* libssl.a */,
+				C156B58A1E84DBC900344598 /* libcrypto.1.0.2h.a */,
+				C156B58B1E84DBC900344598 /* libssl.1.0.2h.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D591A8401E85E225006D744B /* iOSOnvif */ = {
+			isa = PBXGroup;
+			children = (
+				C156B4971E84DB6B00344598 /* include */,
+				C156B4BA1E84DB7300344598 /* onvifgen */,
+				C156B4771E84DB6000344598 /* gsoap */,
+				D591A8411E85E225006D744B /* iOSOnvif.h */,
+				D591A8481E85E24D006D744B /* iOSOnvif.mm */,
+			);
+			path = iOSOnvif;
+			sourceTree = "<group>";
+		};
+		D591A8831E85F25E006D744B /* iOSOnvifFramework */ = {
+			isa = PBXGroup;
+			children = (
+				D591A8841E85F25E006D744B /* iOSOnvifFramework.h */,
+				D591A8851E85F25E006D744B /* Info.plist */,
+			);
+			path = iOSOnvifFramework;
+			sourceTree = "<group>";
+		};
+		D591A8941E85F5B2006D744B /* iOSOnvifFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				D591A8951E85F5B2006D744B /* iOSOnvifFrameworkTests.mm */,
+				D591A8971E85F5B2006D744B /* Info.plist */,
+			);
+			path = iOSOnvifFrameworkTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C156B4371E84DB0600344598 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C156B5411E84DB7300344598 /* soapDeviceIOBindingService.h in Headers */,
+				C156B4A91E84DB6B00344598 /* onvifclient.hpp in Headers */,
+				C156B5741E84DB7300344598 /* soapRecordingBindingProxy.h in Headers */,
+				C156B5501E84DB7300344598 /* soapImagingBindingProxy.h in Headers */,
+				C156B4B71E84DB6B00344598 /* onvifserverevent.hpp in Headers */,
+				C156B5871E84DB7300344598 /* soapSubscriptionManagerBindingService.h in Headers */,
+				C156B5821E84DB7300344598 /* soapSearchBindingService.h in Headers */,
+				C156B4B51E84DB6B00344598 /* onvifserverdevice.hpp in Headers */,
+				C156B57E1E84DB7300344598 /* soapReplayBindingService.h in Headers */,
+				C156B4B81E84DB6B00344598 /* onvifservermedia.hpp in Headers */,
+				C156B5721E84DB7300344598 /* soapReceiverBindingService.h in Headers */,
+				C156B5601E84DB7300344598 /* soapPausableSubscriptionManagerBindingProxy.h in Headers */,
+				C156B53D1E84DB7300344598 /* soapDeviceBindingService.h in Headers */,
+				C156B5681E84DB7300344598 /* soapPullPointBindingProxy.h in Headers */,
+				C156B5AC1E85109700344598 /* duration.h in Headers */,
+				C156B5391E84DB7300344598 /* soapCreatePullPointBindingService.h in Headers */,
+				C156B5981E84F77800344598 /* stdsoap2.h in Headers */,
+				C156B5371E84DB7300344598 /* soapCreatePullPointBindingProxy.h in Headers */,
+				C156B5431E84DB7300344598 /* soapDiscoveryLookupBindingProxy.h in Headers */,
+				C156B5541E84DB7300344598 /* soapMediaBindingProxy.h in Headers */,
+				C156B4AD1E84DB6B00344598 /* onvifclientmedia.hpp in Headers */,
+				C156B55A1E84DB7300344598 /* soapNotificationConsumerBindingService.h in Headers */,
+				C156B5561E84DB7300344598 /* soapMediaBindingService.h in Headers */,
+				C156B4AC1E84DB6B00344598 /* onvifclientimaging.hpp in Headers */,
+				C156B54B1E84DB7300344598 /* soapEventBindingProxy.h in Headers */,
+				C156B5B41E85109700344598 /* wsaapi.h in Headers */,
+				C156B5641E84DB7300344598 /* soapPTZBindingProxy.h in Headers */,
+				C156B5451E84DB7300344598 /* soapDiscoveryLookupBindingService.h in Headers */,
+				C156B5581E84DB7300344598 /* soapNotificationConsumerBindingProxy.h in Headers */,
+				C156B5B21E85109700344598 /* threads.h in Headers */,
+				C156B57C1E84DB7300344598 /* soapReplayBindingProxy.h in Headers */,
+				C156B5761E84DB7300344598 /* soapRecordingBindingService.h in Headers */,
+				C156B4AE1E84DB6B00344598 /* onvifclientptz.hpp in Headers */,
+				C156B5781E84DB7300344598 /* soapRemoteDiscoveryBindingProxy.h in Headers */,
+				C156B4B91E84DB6B00344598 /* onvifserverreceiver.hpp in Headers */,
+				C156B5851E84DB7300344598 /* soapSubscriptionManagerBindingProxy.h in Headers */,
+				C156B5831E84DB7300344598 /* soapStub.h in Headers */,
+				C156B4B41E84DB6B00344598 /* onvifserver.hpp in Headers */,
+				C156B55C1E84DB7300344598 /* soapNotificationProducerBindingProxy.h in Headers */,
+				C156B5471E84DB7300344598 /* soapDisplayBindingProxy.h in Headers */,
+				C156B5B71E85109700344598 /* wsseapi.h in Headers */,
+				C156B56E1E84DB7300344598 /* soapPullPointSubscriptionBindingService.h in Headers */,
+				C156B44B1E84DB0600344598 /* OnvifFramework.h in Headers */,
+				C156B5801E84DB7300344598 /* soapSearchBindingProxy.h in Headers */,
+				C156B53B1E84DB7300344598 /* soapDeviceBindingProxy.h in Headers */,
+				C156B53F1E84DB7300344598 /* soapDeviceIOBindingProxy.h in Headers */,
+				C156B5621E84DB7300344598 /* soapPausableSubscriptionManagerBindingService.h in Headers */,
+				C156B4B61E84DB6B00344598 /* onvifserverdiscover.hpp in Headers */,
+				C156B5B01E85109700344598 /* smdevp.h in Headers */,
+				C156B4AA1E84DB6B00344598 /* onvifclientdevice.hpp in Headers */,
+				C156B4B01E84DB6B00344598 /* onvifclientrecording.hpp in Headers */,
+				C156B57A1E84DB7300344598 /* soapRemoteDiscoveryBindingService.h in Headers */,
+				C156B54E1E84DB7300344598 /* soapH.h in Headers */,
+				C156B4AB1E84DB6B00344598 /* onvifclientevent.hpp in Headers */,
+				C156B4B31E84DB6B00344598 /* onvifclientsearch.hpp in Headers */,
+				C156B56C1E84DB7300344598 /* soapPullPointSubscriptionBindingProxy.h in Headers */,
+				C156B4AF1E84DB6B00344598 /* onvifclientreceiver.hpp in Headers */,
+				C156B5491E84DB7300344598 /* soapDisplayBindingService.h in Headers */,
+				C156B5521E84DB7300344598 /* soapImagingBindingService.h in Headers */,
+				C156B5701E84DB7300344598 /* soapReceiverBindingProxy.h in Headers */,
+				C156B4B11E84DB6B00344598 /* onvifclientremotediscovery.hpp in Headers */,
+				C156B5661E84DB7300344598 /* soapPTZBindingService.h in Headers */,
+				C156B4B21E84DB6B00344598 /* onvifclientreplay.hpp in Headers */,
+				C156B56A1E84DB7300344598 /* soapPullPointBindingService.h in Headers */,
+				C156B55E1E84DB7300344598 /* soapNotificationProducerBindingService.h in Headers */,
+				C156B54D1E84DB7300344598 /* soapEventBindingService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D591A87F1E85F25E006D744B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D591A8861E85F25E006D744B /* iOSOnvifFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C156B4391E84DB0600344598 /* OnvifFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C156B44E1E84DB0600344598 /* Build configuration list for PBXNativeTarget "OnvifFramework" */;
+			buildPhases = (
+				C156B4351E84DB0600344598 /* Sources */,
+				C156B4361E84DB0600344598 /* Frameworks */,
+				C156B4371E84DB0600344598 /* Headers */,
+				C156B4381E84DB0600344598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnvifFramework;
+			productName = OnvifFramework;
+			productReference = C156B43A1E84DB0600344598 /* OnvifFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C156B4421E84DB0600344598 /* OnvifFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C156B4511E84DB0600344598 /* Build configuration list for PBXNativeTarget "OnvifFrameworkTests" */;
+			buildPhases = (
+				C156B43F1E84DB0600344598 /* Sources */,
+				C156B4401E84DB0600344598 /* Frameworks */,
+				C156B4411E84DB0600344598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D591A88D1E85F2BD006D744B /* PBXTargetDependency */,
+			);
+			name = OnvifFrameworkTests;
+			productName = OnvifFrameworkTests;
+			productReference = C156B4431E84DB0600344598 /* OnvifFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D591A83E1E85E224006D744B /* iOSOnvif */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D591A8451E85E225006D744B /* Build configuration list for PBXNativeTarget "iOSOnvif" */;
+			buildPhases = (
+				D591A83B1E85E224006D744B /* Sources */,
+				D591A83C1E85E224006D744B /* Frameworks */,
+				D591A83D1E85E224006D744B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSOnvif;
+			productName = iOSOnvif;
+			productReference = D591A83F1E85E224006D744B /* libiOSOnvif.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D591A8811E85F25E006D744B /* iOSOnvifFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D591A8871E85F25E006D744B /* Build configuration list for PBXNativeTarget "iOSOnvifFramework" */;
+			buildPhases = (
+				D591A87D1E85F25E006D744B /* Sources */,
+				D591A87E1E85F25E006D744B /* Frameworks */,
+				D591A87F1E85F25E006D744B /* Headers */,
+				D591A8801E85F25E006D744B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D591A88B1E85F272006D744B /* PBXTargetDependency */,
+			);
+			name = iOSOnvifFramework;
+			productName = iOSOnvifFramework;
+			productReference = D591A8821E85F25E006D744B /* iOSOnvifFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D591A89E1E85F5CC006D744B /* iOSOnvifFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D591A8A71E85F5CC006D744B /* Build configuration list for PBXNativeTarget "iOSOnvifFrameworkTests" */;
+			buildPhases = (
+				D591A89B1E85F5CC006D744B /* Sources */,
+				D591A89C1E85F5CC006D744B /* Frameworks */,
+				D591A89D1E85F5CC006D744B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D591A8AD1E85F82E006D744B /* PBXTargetDependency */,
+			);
+			name = iOSOnvifFrameworkTests;
+			productName = iOSOnvifFrameworkTests;
+			productReference = D591A89F1E85F5CC006D744B /* iOSOnvifFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C156B4311E84DB0600344598 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = sungju;
+				TargetAttributes = {
+					C156B4391E84DB0600344598 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2WDSPKEQD2;
+						ProvisioningStyle = Automatic;
+					};
+					C156B4421E84DB0600344598 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 22X77ENQ2H;
+						ProvisioningStyle = Automatic;
+					};
+					D591A83E1E85E224006D744B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					D591A8811E85F25E006D744B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					D591A89E1E85F5CC006D744B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C156B4341E84DB0600344598 /* Build configuration list for PBXProject "OnvifFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C156B4301E84DB0600344598;
+			productRefGroup = C156B43B1E84DB0600344598 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C156B4391E84DB0600344598 /* OnvifFramework */,
+				C156B4421E84DB0600344598 /* OnvifFrameworkTests */,
+				D591A8811E85F25E006D744B /* iOSOnvifFramework */,
+				D591A83E1E85E224006D744B /* iOSOnvif */,
+				D591A89E1E85F5CC006D744B /* iOSOnvifFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C156B4381E84DB0600344598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C156B4411E84DB0600344598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D591A8801E85F25E006D744B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D591A89D1E85F5CC006D744B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C156B4351E84DB0600344598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C156B5AA1E85109700344598 /* dom.cpp in Sources */,
+				C156B57D1E84DB7300344598 /* soapReplayBindingService.cpp in Sources */,
+				C156B5771E84DB7300344598 /* soapRemoteDiscoveryBindingProxy.cpp in Sources */,
+				C156B5361E84DB7300344598 /* soapCreatePullPointBindingProxy.cpp in Sources */,
+				C156B56B1E84DB7300344598 /* soapPullPointSubscriptionBindingProxy.cpp in Sources */,
+				C156B5351E84DB7300344598 /* soapC.cpp in Sources */,
+				C156B48F1E84DB6000344598 /* stdsoap2.cpp in Sources */,
+				C156B5381E84DB7300344598 /* soapCreatePullPointBindingService.cpp in Sources */,
+				C156B5551E84DB7300344598 /* soapMediaBindingService.cpp in Sources */,
+				C156B5751E84DB7300344598 /* soapRecordingBindingService.cpp in Sources */,
+				C156B5691E84DB7300344598 /* soapPullPointBindingService.cpp in Sources */,
+				C156B5571E84DB7300344598 /* soapNotificationConsumerBindingProxy.cpp in Sources */,
+				C156B5AF1E85109700344598 /* smdevp.c in Sources */,
+				C156B55B1E84DB7300344598 /* soapNotificationProducerBindingProxy.cpp in Sources */,
+				C156B55D1E84DB7300344598 /* soapNotificationProducerBindingService.cpp in Sources */,
+				C156B57F1E84DB7300344598 /* soapSearchBindingProxy.cpp in Sources */,
+				C156B5591E84DB7300344598 /* soapNotificationConsumerBindingService.cpp in Sources */,
+				C156B5421E84DB7300344598 /* soapDiscoveryLookupBindingProxy.cpp in Sources */,
+				C156B5611E84DB7300344598 /* soapPausableSubscriptionManagerBindingService.cpp in Sources */,
+				C156B56D1E84DB7300344598 /* soapPullPointSubscriptionBindingService.cpp in Sources */,
+				C156B54F1E84DB7300344598 /* soapImagingBindingProxy.cpp in Sources */,
+				C156B5711E84DB7300344598 /* soapReceiverBindingService.cpp in Sources */,
+				C156B5AB1E85109700344598 /* duration.c in Sources */,
+				C156B5481E84DB7300344598 /* soapDisplayBindingService.cpp in Sources */,
+				C156B5841E84DB7300344598 /* soapSubscriptionManagerBindingProxy.cpp in Sources */,
+				C156B5531E84DB7300344598 /* soapMediaBindingProxy.cpp in Sources */,
+				C156B5791E84DB7300344598 /* soapRemoteDiscoveryBindingService.cpp in Sources */,
+				C156B56F1E84DB7300344598 /* soapReceiverBindingProxy.cpp in Sources */,
+				C156B5671E84DB7300344598 /* soapPullPointBindingProxy.cpp in Sources */,
+				C156B5401E84DB7300344598 /* soapDeviceIOBindingService.cpp in Sources */,
+				C156B5B31E85109700344598 /* wsaapi.c in Sources */,
+				C156B53A1E84DB7300344598 /* soapDeviceBindingProxy.cpp in Sources */,
+				C156B5811E84DB7300344598 /* soapSearchBindingService.cpp in Sources */,
+				C156B54C1E84DB7300344598 /* soapEventBindingService.cpp in Sources */,
+				C156B5731E84DB7300344598 /* soapRecordingBindingProxy.cpp in Sources */,
+				C156B5651E84DB7300344598 /* soapPTZBindingService.cpp in Sources */,
+				C156B57B1E84DB7300344598 /* soapReplayBindingProxy.cpp in Sources */,
+				C156B5861E84DB7300344598 /* soapSubscriptionManagerBindingService.cpp in Sources */,
+				C156B54A1E84DB7300344598 /* soapEventBindingProxy.cpp in Sources */,
+				C156B5631E84DB7300344598 /* soapPTZBindingProxy.cpp in Sources */,
+				C156B5461E84DB7300344598 /* soapDisplayBindingProxy.cpp in Sources */,
+				C156B55F1E84DB7300344598 /* soapPausableSubscriptionManagerBindingProxy.cpp in Sources */,
+				C156B5441E84DB7300344598 /* soapDiscoveryLookupBindingService.cpp in Sources */,
+				C156B5511E84DB7300344598 /* soapImagingBindingService.cpp in Sources */,
+				C156B53C1E84DB7300344598 /* soapDeviceBindingService.cpp in Sources */,
+				C156B5B11E85109700344598 /* threads.c in Sources */,
+				C156B5B61E85109700344598 /* wsseapi.cpp in Sources */,
+				C156B53E1E84DB7300344598 /* soapDeviceIOBindingProxy.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C156B43F1E84DB0600344598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C156B4491E84DB0600344598 /* OnvifFrameworkTests.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D591A83B1E85E224006D744B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D591A8761E85E279006D744B /* duration.c in Sources */,
+				D591A8771E85E279006D744B /* smdevp.c in Sources */,
+				D591A8781E85E279006D744B /* threads.c in Sources */,
+				D591A8791E85E279006D744B /* wsaapi.c in Sources */,
+				D591A84B1E85E270006D744B /* soapC.cpp in Sources */,
+				D591A84C1E85E270006D744B /* soapCreatePullPointBindingProxy.cpp in Sources */,
+				D591A84D1E85E270006D744B /* soapCreatePullPointBindingService.cpp in Sources */,
+				D591A84E1E85E270006D744B /* soapDeviceBindingProxy.cpp in Sources */,
+				D591A84F1E85E270006D744B /* soapDeviceBindingService.cpp in Sources */,
+				D591A8501E85E270006D744B /* soapDeviceIOBindingProxy.cpp in Sources */,
+				D591A8511E85E270006D744B /* soapDeviceIOBindingService.cpp in Sources */,
+				D591A8521E85E270006D744B /* soapDiscoveryLookupBindingProxy.cpp in Sources */,
+				D591A8531E85E270006D744B /* soapDiscoveryLookupBindingService.cpp in Sources */,
+				D591A8541E85E270006D744B /* soapDisplayBindingProxy.cpp in Sources */,
+				D591A8551E85E270006D744B /* soapDisplayBindingService.cpp in Sources */,
+				D591A8561E85E270006D744B /* soapEventBindingProxy.cpp in Sources */,
+				D591A8571E85E270006D744B /* soapEventBindingService.cpp in Sources */,
+				D591A8581E85E270006D744B /* soapImagingBindingProxy.cpp in Sources */,
+				D591A8591E85E270006D744B /* soapImagingBindingService.cpp in Sources */,
+				D591A85A1E85E270006D744B /* soapMediaBindingProxy.cpp in Sources */,
+				D591A85B1E85E270006D744B /* soapMediaBindingService.cpp in Sources */,
+				D591A85C1E85E270006D744B /* soapNotificationConsumerBindingProxy.cpp in Sources */,
+				D591A85D1E85E270006D744B /* soapNotificationConsumerBindingService.cpp in Sources */,
+				D591A85E1E85E270006D744B /* soapNotificationProducerBindingProxy.cpp in Sources */,
+				D591A85F1E85E270006D744B /* soapNotificationProducerBindingService.cpp in Sources */,
+				D591A8601E85E270006D744B /* soapPausableSubscriptionManagerBindingProxy.cpp in Sources */,
+				D591A8611E85E270006D744B /* soapPausableSubscriptionManagerBindingService.cpp in Sources */,
+				D591A8621E85E270006D744B /* soapPTZBindingProxy.cpp in Sources */,
+				D591A8631E85E270006D744B /* soapPTZBindingService.cpp in Sources */,
+				D591A8641E85E270006D744B /* soapPullPointBindingProxy.cpp in Sources */,
+				D591A8651E85E270006D744B /* soapPullPointBindingService.cpp in Sources */,
+				D591A8661E85E270006D744B /* soapPullPointSubscriptionBindingProxy.cpp in Sources */,
+				D591A8671E85E270006D744B /* soapPullPointSubscriptionBindingService.cpp in Sources */,
+				D591A8681E85E270006D744B /* soapReceiverBindingProxy.cpp in Sources */,
+				D591A8691E85E270006D744B /* soapReceiverBindingService.cpp in Sources */,
+				D591A86A1E85E270006D744B /* soapRecordingBindingProxy.cpp in Sources */,
+				D591A86B1E85E270006D744B /* soapRecordingBindingService.cpp in Sources */,
+				D591A86C1E85E270006D744B /* soapRemoteDiscoveryBindingProxy.cpp in Sources */,
+				D591A86D1E85E270006D744B /* soapRemoteDiscoveryBindingService.cpp in Sources */,
+				D591A86E1E85E270006D744B /* soapReplayBindingProxy.cpp in Sources */,
+				D591A86F1E85E270006D744B /* soapReplayBindingService.cpp in Sources */,
+				D591A8701E85E270006D744B /* soapSearchBindingProxy.cpp in Sources */,
+				D591A8711E85E270006D744B /* soapSearchBindingService.cpp in Sources */,
+				D591A8721E85E270006D744B /* soapSubscriptionManagerBindingProxy.cpp in Sources */,
+				D591A8731E85E270006D744B /* soapSubscriptionManagerBindingService.cpp in Sources */,
+				D591A8741E85E270006D744B /* wsseapi.cpp in Sources */,
+				D591A8751E85E270006D744B /* stdsoap2.cpp in Sources */,
+				D591A8491E85E24D006D744B /* iOSOnvif.mm in Sources */,
+				D591A84A1E85E260006D744B /* dom.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D591A87D1E85F25E006D744B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D591A89B1E85F5CC006D744B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D591A8AA1E85F6BE006D744B /* iOSOnvifFrameworkTests.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D591A88B1E85F272006D744B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D591A83E1E85E224006D744B /* iOSOnvif */;
+			targetProxy = D591A88A1E85F272006D744B /* PBXContainerItemProxy */;
+		};
+		D591A88D1E85F2BD006D744B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D591A8811E85F25E006D744B /* iOSOnvifFramework */;
+			targetProxy = D591A88C1E85F2BD006D744B /* PBXContainerItemProxy */;
+		};
+		D591A8AD1E85F82E006D744B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D591A83E1E85E224006D744B /* iOSOnvif */;
+			targetProxy = D591A8AC1E85F82E006D744B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C156B44C1E84DB0600344598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C156B44D1E84DB0600344598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C156B44F1E84DB0600344598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2WDSPKEQD2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.cpp;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/OpenSSL-master/include-ios\"";
+				INFOPLIST_FILE = OnvifFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/OpenSSL-master/lib-ios\"",
+					"$(PROJECT_DIR)/OpenSSL-master/lib-ios",
+				);
+				OTHER_CFLAGS = (
+					"-DWITH_DOM",
+					"-DWITH_OPENSSL",
+					"-DWITH_PURE_VIRTUAL",
+					"-DWITH_NONAMESPACES",
+				);
+				OTHER_LDFLAGS = "";
+				PLIST_FILE_OUTPUT_FORMAT = binary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inka.OnvifFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Debug;
+		};
+		C156B4501E84DB0600344598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2WDSPKEQD2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.cpp;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/OpenSSL-master/include-ios\"";
+				INFOPLIST_FILE = OnvifFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/OpenSSL-master/lib-ios\"",
+					"$(PROJECT_DIR)/OpenSSL-master/lib-ios",
+				);
+				OTHER_CFLAGS = (
+					"-DWITH_DOM",
+					"-DWITH_OPENSSL",
+					"-DWITH_PURE_VIRTUAL",
+					"-DWITH_NONAMESPACES",
+				);
+				OTHER_LDFLAGS = "";
+				PLIST_FILE_OUTPUT_FORMAT = binary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inka.OnvifFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Release;
+		};
+		C156B4521E84DB0600344598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 22X77ENQ2H;
+				INFOPLIST_FILE = OnvifFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "-DWITH_OPENSSL";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inka.OnvifFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C156B4531E84DB0600344598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 22X77ENQ2H;
+				INFOPLIST_FILE = OnvifFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "-DWITH_OPENSSL";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inka.OnvifFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D591A8461E85E225006D744B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/OpenSSL-master/include-ios\"",
+					"\"$(SRCROOT)/onvifgen\"",
+					"\"$(SRCROOT)/include\"",
+					"\"$(SRCROOT)/gsoap/gsoap/runtime\"",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/OpenSSL-master/lib-ios";
+				OTHER_CFLAGS = (
+					"-DWITH_DOM",
+					"-DWITH_OPENSSL",
+					"-DWITH_PURE_VIRTUAL",
+					"-DWITH_NONAMESPACES",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Debug;
+		};
+		D591A8471E85E225006D744B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/OpenSSL-master/include-ios\"",
+					"\"$(SRCROOT)/onvifgen\"",
+					"\"$(SRCROOT)/include\"",
+					"\"$(SRCROOT)/gsoap/gsoap/runtime\"",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/OpenSSL-master/lib-ios";
+				OTHER_CFLAGS = (
+					"-DWITH_DOM",
+					"-DWITH_OPENSSL",
+					"-DWITH_PURE_VIRTUAL",
+					"-DWITH_NONAMESPACES",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Release;
+		};
+		D591A8881E85F25E006D744B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = iOSOnvifFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inka.iOSOnvifFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Debug;
+		};
+		D591A8891E85F25E006D744B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = iOSOnvifFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inka.iOSOnvifFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Release;
+		};
+		D591A8A81E85F5CC006D744B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iOSOnvifFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inka.iOSOnvifFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D591A8A91E85F5CC006D744B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iOSOnvifFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inka.iOSOnvifFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C156B4341E84DB0600344598 /* Build configuration list for PBXProject "OnvifFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C156B44C1E84DB0600344598 /* Debug */,
+				C156B44D1E84DB0600344598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C156B44E1E84DB0600344598 /* Build configuration list for PBXNativeTarget "OnvifFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C156B44F1E84DB0600344598 /* Debug */,
+				C156B4501E84DB0600344598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C156B4511E84DB0600344598 /* Build configuration list for PBXNativeTarget "OnvifFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C156B4521E84DB0600344598 /* Debug */,
+				C156B4531E84DB0600344598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D591A8451E85E225006D744B /* Build configuration list for PBXNativeTarget "iOSOnvif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D591A8461E85E225006D744B /* Debug */,
+				D591A8471E85E225006D744B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D591A8871E85F25E006D744B /* Build configuration list for PBXNativeTarget "iOSOnvifFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D591A8881E85F25E006D744B /* Debug */,
+				D591A8891E85F25E006D744B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D591A8A71E85F5CC006D744B /* Build configuration list for PBXNativeTarget "iOSOnvifFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D591A8A81E85F5CC006D744B /* Debug */,
+				D591A8A91E85F5CC006D744B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C156B4311E84DB0600344598 /* Project object */;
+}
