@@ -29,7 +29,10 @@
     if (nsUrl == nil || cameraNsUrl == nil)
         return nil;
     
-    NSString *changedPath = [NSString stringWithFormat:@"%@://%@:%@%@", nsUrl.scheme, cameraNsUrl.host, cameraNsUrl.port, nsUrl.path];
+    NSString *changedPath = [NSString stringWithFormat:@"%@://%@:%@%@", nsUrl.scheme, cameraNsUrl.host, nsUrl.port, nsUrl.path];
+    if (nsUrl.query != nil) {
+        changedPath = [changedPath stringByAppendingFormat:@"?%@", nsUrl.query];
+    }
     
     return changedPath;
 }
@@ -54,7 +57,20 @@
         return nil;
     }
     
-    for (int i = 0; i < profiles.Profiles.size(); i++)
+    _trt__GetStreamUriResponse streamUrl;
+    value = media.GetStreamUrl(profiles.Profiles[profiles.Profiles.size()-1]->token.c_str(), streamUrl, changedPath.UTF8String);
+    if (value != SOAP_OK) {
+        return nil;
+    }
+    
+    NSString *changedRTSPPath = [self chanagedHostPath:[NSString stringWithUTF8String:streamUrl.MediaUri->Uri.c_str()]];
+    if ([changedRTSPPath isEqualToString:@""]) {
+        return nil;
+    }
+    
+    return [NSURL URLWithString:changedRTSPPath];
+    
+    /*for (int i = 0; i < profiles.Profiles.size(); i++)
     {
         _trt__GetStreamUriResponse streamUrl;
         value = media.GetStreamUrl(profiles.Profiles[i]->token.c_str(), streamUrl, changedPath.UTF8String);
@@ -67,9 +83,7 @@
         if (![changedRTSPPath isEqualToString:@""]) {
             return [NSURL URLWithString:changedRTSPPath];
         }
-    }
-    
-    return nil;
+    }*/
 }
 
 @end

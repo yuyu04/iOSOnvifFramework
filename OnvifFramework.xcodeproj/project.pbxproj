@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		C156B6081E888FA000344598 /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C156B6091E888FA000344598 /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				C156B60E1E888FA700344598 /* ShellScript */,
+			);
+			dependencies = (
+				C156B60D1E888FA500344598 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		C156B4491E84DB0600344598 /* OnvifFrameworkTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = C156B4481E84DB0600344598 /* OnvifFrameworkTests.mm */; };
 		C156B44B1E84DB0600344598 /* OnvifFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B43D1E84DB0600344598 /* OnvifFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -122,6 +137,72 @@
 		C156B5B41E85109700344598 /* wsaapi.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5A61E85109700344598 /* wsaapi.h */; };
 		C156B5B61E85109700344598 /* wsseapi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B5A81E85109700344598 /* wsseapi.cpp */; };
 		C156B5B71E85109700344598 /* wsseapi.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5A91E85109700344598 /* wsseapi.h */; };
+		C156B5BA1E888DE400344598 /* iOSOnvif.h in Headers */ = {isa = PBXBuildFile; fileRef = D591A8411E85E225006D744B /* iOSOnvif.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C156B5BB1E888DEB00344598 /* duration.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B59E1E85109700344598 /* duration.h */; };
+		C156B5BC1E888DED00344598 /* smdevp.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5A21E85109700344598 /* smdevp.h */; };
+		C156B5BD1E888DF300344598 /* threads.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5A41E85109700344598 /* threads.h */; };
+		C156B5BE1E888DF500344598 /* wsaapi.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5A61E85109700344598 /* wsaapi.h */; };
+		C156B5BF1E888DFE00344598 /* wsseapi.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5A91E85109700344598 /* wsseapi.h */; };
+		C156B5C01E888DFF00344598 /* stdsoap2.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5911E84F77800344598 /* stdsoap2.h */; };
+		C156B5C11E888E0300344598 /* soapCreatePullPointBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4D01E84DB7300344598 /* soapCreatePullPointBindingProxy.h */; };
+		C156B5C21E888E0500344598 /* soapCreatePullPointBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4D21E84DB7300344598 /* soapCreatePullPointBindingService.h */; };
+		C156B5C31E888E0600344598 /* soapDeviceBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4D41E84DB7300344598 /* soapDeviceBindingProxy.h */; };
+		C156B5C41E888E0800344598 /* soapDeviceBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4D61E84DB7300344598 /* soapDeviceBindingService.h */; };
+		C156B5C51E888E0900344598 /* soapDeviceIOBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4D81E84DB7300344598 /* soapDeviceIOBindingProxy.h */; };
+		C156B5C61E888E0B00344598 /* soapDeviceIOBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4DA1E84DB7300344598 /* soapDeviceIOBindingService.h */; };
+		C156B5C71E888E0D00344598 /* soapDiscoveryLookupBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4DC1E84DB7300344598 /* soapDiscoveryLookupBindingProxy.h */; };
+		C156B5C81E888E0F00344598 /* soapDiscoveryLookupBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4DE1E84DB7300344598 /* soapDiscoveryLookupBindingService.h */; };
+		C156B5C91E888E1000344598 /* soapDisplayBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4E01E84DB7300344598 /* soapDisplayBindingProxy.h */; };
+		C156B5CA1E888E1100344598 /* soapDisplayBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4E21E84DB7300344598 /* soapDisplayBindingService.h */; };
+		C156B5CB1E888E1C00344598 /* soapEventBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4E41E84DB7300344598 /* soapEventBindingProxy.h */; };
+		C156B5CC1E888E1E00344598 /* soapEventBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4E61E84DB7300344598 /* soapEventBindingService.h */; };
+		C156B5CD1E888E1F00344598 /* soapH.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4E71E84DB7300344598 /* soapH.h */; };
+		C156B5CE1E888E2000344598 /* soapImagingBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4E91E84DB7300344598 /* soapImagingBindingProxy.h */; };
+		C156B5CF1E888E2100344598 /* soapImagingBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4EB1E84DB7300344598 /* soapImagingBindingService.h */; };
+		C156B5D01E888E2300344598 /* soapMediaBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4ED1E84DB7300344598 /* soapMediaBindingProxy.h */; };
+		C156B5D11E888E2400344598 /* soapMediaBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4EF1E84DB7300344598 /* soapMediaBindingService.h */; };
+		C156B5D21E888E2500344598 /* soapNotificationConsumerBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4F11E84DB7300344598 /* soapNotificationConsumerBindingProxy.h */; };
+		C156B5D31E888E2700344598 /* soapNotificationConsumerBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4F31E84DB7300344598 /* soapNotificationConsumerBindingService.h */; };
+		C156B5D41E888E2800344598 /* soapNotificationProducerBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4F51E84DB7300344598 /* soapNotificationProducerBindingProxy.h */; };
+		C156B5D51E888E2900344598 /* soapNotificationProducerBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4F71E84DB7300344598 /* soapNotificationProducerBindingService.h */; };
+		C156B5D61E888E2A00344598 /* soapPausableSubscriptionManagerBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4F91E84DB7300344598 /* soapPausableSubscriptionManagerBindingProxy.h */; };
+		C156B5D71E888E2C00344598 /* soapPausableSubscriptionManagerBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4FB1E84DB7300344598 /* soapPausableSubscriptionManagerBindingService.h */; };
+		C156B5D81E888E2C00344598 /* soapPTZBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4FD1E84DB7300344598 /* soapPTZBindingProxy.h */; };
+		C156B5D91E888E2E00344598 /* soapPTZBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B4FF1E84DB7300344598 /* soapPTZBindingService.h */; };
+		C156B5DA1E888E3400344598 /* soapPullPointBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5011E84DB7300344598 /* soapPullPointBindingProxy.h */; };
+		C156B5DB1E888E3500344598 /* soapPullPointBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5031E84DB7300344598 /* soapPullPointBindingService.h */; };
+		C156B5DC1E888E3700344598 /* soapPullPointSubscriptionBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5051E84DB7300344598 /* soapPullPointSubscriptionBindingProxy.h */; };
+		C156B5DD1E888E3800344598 /* soapPullPointSubscriptionBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5071E84DB7300344598 /* soapPullPointSubscriptionBindingService.h */; };
+		C156B5DE1E888E3900344598 /* soapReceiverBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5091E84DB7300344598 /* soapReceiverBindingProxy.h */; };
+		C156B5DF1E888E3A00344598 /* soapReceiverBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B50B1E84DB7300344598 /* soapReceiverBindingService.h */; };
+		C156B5E01E888E3B00344598 /* soapRecordingBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B50D1E84DB7300344598 /* soapRecordingBindingProxy.h */; };
+		C156B5E11E888E3C00344598 /* soapRecordingBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B50F1E84DB7300344598 /* soapRecordingBindingService.h */; };
+		C156B5E21E888E3E00344598 /* soapRemoteDiscoveryBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5111E84DB7300344598 /* soapRemoteDiscoveryBindingProxy.h */; };
+		C156B5E31E888E3F00344598 /* soapRemoteDiscoveryBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5131E84DB7300344598 /* soapRemoteDiscoveryBindingService.h */; };
+		C156B5E41E888E4000344598 /* soapReplayBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5151E84DB7300344598 /* soapReplayBindingProxy.h */; };
+		C156B5E51E888E4100344598 /* soapReplayBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5171E84DB7300344598 /* soapReplayBindingService.h */; };
+		C156B5E61E888E4200344598 /* soapSearchBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5191E84DB7300344598 /* soapSearchBindingProxy.h */; };
+		C156B5E71E888E4300344598 /* soapSearchBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B51B1E84DB7300344598 /* soapSearchBindingService.h */; };
+		C156B5E81E888E4400344598 /* soapStub.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B51C1E84DB7300344598 /* soapStub.h */; };
+		C156B5E91E888E4500344598 /* soapSubscriptionManagerBindingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B51E1E84DB7300344598 /* soapSubscriptionManagerBindingProxy.h */; };
+		C156B5EA1E888E4700344598 /* soapSubscriptionManagerBindingService.h in Headers */ = {isa = PBXBuildFile; fileRef = C156B5201E84DB7300344598 /* soapSubscriptionManagerBindingService.h */; };
+		C156B5EB1E888E6500344598 /* onvifclient.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4981E84DB6B00344598 /* onvifclient.hpp */; };
+		C156B5EC1E888E6600344598 /* onvifclientdevice.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4991E84DB6B00344598 /* onvifclientdevice.hpp */; };
+		C156B5ED1E888E6700344598 /* onvifclientevent.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B49A1E84DB6B00344598 /* onvifclientevent.hpp */; };
+		C156B5EE1E888E6800344598 /* onvifclientimaging.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B49B1E84DB6B00344598 /* onvifclientimaging.hpp */; };
+		C156B5EF1E888E7100344598 /* onvifclientmedia.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B49C1E84DB6B00344598 /* onvifclientmedia.hpp */; };
+		C156B5F01E888E7300344598 /* onvifclientptz.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B49D1E84DB6B00344598 /* onvifclientptz.hpp */; };
+		C156B5F11E888E7500344598 /* onvifclientreceiver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B49E1E84DB6B00344598 /* onvifclientreceiver.hpp */; };
+		C156B5F21E888E7700344598 /* onvifclientrecording.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B49F1E84DB6B00344598 /* onvifclientrecording.hpp */; };
+		C156B5F31E888E7800344598 /* onvifclientremotediscovery.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A01E84DB6B00344598 /* onvifclientremotediscovery.hpp */; };
+		C156B5F41E888E7900344598 /* onvifclientreplay.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A11E84DB6B00344598 /* onvifclientreplay.hpp */; };
+		C156B5F51E888E7E00344598 /* onvifclientsearch.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A21E84DB6B00344598 /* onvifclientsearch.hpp */; };
+		C156B5F61E888E8000344598 /* onvifserver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A31E84DB6B00344598 /* onvifserver.hpp */; };
+		C156B5F71E888E8100344598 /* onvifserverdevice.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A41E84DB6B00344598 /* onvifserverdevice.hpp */; };
+		C156B5F81E888E8300344598 /* onvifserverdiscover.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A51E84DB6B00344598 /* onvifserverdiscover.hpp */; };
+		C156B5F91E888E8400344598 /* onvifserverevent.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A61E84DB6B00344598 /* onvifserverevent.hpp */; };
+		C156B5FA1E888E8600344598 /* onvifservermedia.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A71E84DB6B00344598 /* onvifservermedia.hpp */; };
+		C156B5FB1E888E8900344598 /* onvifserverreceiver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C156B4A81E84DB6B00344598 /* onvifserverreceiver.hpp */; };
 		D591A7541E85BE8A006D744B /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D591A7521E85BE8A006D744B /* libcrypto.a */; };
 		D591A7551E85BE8A006D744B /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D591A7531E85BE8A006D744B /* libssl.a */; };
 		D591A8441E85E225006D744B /* iOSOnvif.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D591A8411E85E225006D744B /* iOSOnvif.h */; };
@@ -185,6 +266,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C156B60C1E888FA500344598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C156B4311E84DB0600344598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D591A83E1E85E224006D744B;
+			remoteInfo = iOSOnvif;
+		};
 		D591A88A1E85F272006D744B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C156B4311E84DB0600344598 /* Project object */;
@@ -708,6 +796,79 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C156B5B91E888DDB00344598 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C156B5BA1E888DE400344598 /* iOSOnvif.h in Headers */,
+				C156B5EB1E888E6500344598 /* onvifclient.hpp in Headers */,
+				C156B5EE1E888E6800344598 /* onvifclientimaging.hpp in Headers */,
+				C156B5EC1E888E6600344598 /* onvifclientdevice.hpp in Headers */,
+				C156B5ED1E888E6700344598 /* onvifclientevent.hpp in Headers */,
+				C156B5EF1E888E7100344598 /* onvifclientmedia.hpp in Headers */,
+				C156B5F01E888E7300344598 /* onvifclientptz.hpp in Headers */,
+				C156B5F11E888E7500344598 /* onvifclientreceiver.hpp in Headers */,
+				C156B5F21E888E7700344598 /* onvifclientrecording.hpp in Headers */,
+				C156B5F31E888E7800344598 /* onvifclientremotediscovery.hpp in Headers */,
+				C156B5F41E888E7900344598 /* onvifclientreplay.hpp in Headers */,
+				C156B5F51E888E7E00344598 /* onvifclientsearch.hpp in Headers */,
+				C156B5F61E888E8000344598 /* onvifserver.hpp in Headers */,
+				C156B5F71E888E8100344598 /* onvifserverdevice.hpp in Headers */,
+				C156B5F81E888E8300344598 /* onvifserverdiscover.hpp in Headers */,
+				C156B5F91E888E8400344598 /* onvifserverevent.hpp in Headers */,
+				C156B5FA1E888E8600344598 /* onvifservermedia.hpp in Headers */,
+				C156B5FB1E888E8900344598 /* onvifserverreceiver.hpp in Headers */,
+				C156B5BB1E888DEB00344598 /* duration.h in Headers */,
+				C156B5C21E888E0500344598 /* soapCreatePullPointBindingService.h in Headers */,
+				C156B5C01E888DFF00344598 /* stdsoap2.h in Headers */,
+				C156B5C51E888E0900344598 /* soapDeviceIOBindingProxy.h in Headers */,
+				C156B5DB1E888E3500344598 /* soapPullPointBindingService.h in Headers */,
+				C156B5CC1E888E1E00344598 /* soapEventBindingService.h in Headers */,
+				C156B5E21E888E3E00344598 /* soapRemoteDiscoveryBindingProxy.h in Headers */,
+				C156B5DC1E888E3700344598 /* soapPullPointSubscriptionBindingProxy.h in Headers */,
+				C156B5E31E888E3F00344598 /* soapRemoteDiscoveryBindingService.h in Headers */,
+				C156B5E81E888E4400344598 /* soapStub.h in Headers */,
+				C156B5E71E888E4300344598 /* soapSearchBindingService.h in Headers */,
+				C156B5E61E888E4200344598 /* soapSearchBindingProxy.h in Headers */,
+				C156B5E91E888E4500344598 /* soapSubscriptionManagerBindingProxy.h in Headers */,
+				C156B5EA1E888E4700344598 /* soapSubscriptionManagerBindingService.h in Headers */,
+				C156B5E51E888E4100344598 /* soapReplayBindingService.h in Headers */,
+				C156B5E41E888E4000344598 /* soapReplayBindingProxy.h in Headers */,
+				C156B5E11E888E3C00344598 /* soapRecordingBindingService.h in Headers */,
+				C156B5E01E888E3B00344598 /* soapRecordingBindingProxy.h in Headers */,
+				C156B5DF1E888E3A00344598 /* soapReceiverBindingService.h in Headers */,
+				C156B5D01E888E2300344598 /* soapMediaBindingProxy.h in Headers */,
+				C156B5DE1E888E3900344598 /* soapReceiverBindingProxy.h in Headers */,
+				C156B5DA1E888E3400344598 /* soapPullPointBindingProxy.h in Headers */,
+				C156B5DD1E888E3800344598 /* soapPullPointSubscriptionBindingService.h in Headers */,
+				C156B5CE1E888E2000344598 /* soapImagingBindingProxy.h in Headers */,
+				C156B5D61E888E2A00344598 /* soapPausableSubscriptionManagerBindingProxy.h in Headers */,
+				C156B5D71E888E2C00344598 /* soapPausableSubscriptionManagerBindingService.h in Headers */,
+				C156B5D91E888E2E00344598 /* soapPTZBindingService.h in Headers */,
+				C156B5D81E888E2C00344598 /* soapPTZBindingProxy.h in Headers */,
+				C156B5D51E888E2900344598 /* soapNotificationProducerBindingService.h in Headers */,
+				C156B5D41E888E2800344598 /* soapNotificationProducerBindingProxy.h in Headers */,
+				C156B5D21E888E2500344598 /* soapNotificationConsumerBindingProxy.h in Headers */,
+				C156B5D31E888E2700344598 /* soapNotificationConsumerBindingService.h in Headers */,
+				C156B5CD1E888E1F00344598 /* soapH.h in Headers */,
+				C156B5D11E888E2400344598 /* soapMediaBindingService.h in Headers */,
+				C156B5BC1E888DED00344598 /* smdevp.h in Headers */,
+				C156B5CF1E888E2100344598 /* soapImagingBindingService.h in Headers */,
+				C156B5CB1E888E1C00344598 /* soapEventBindingProxy.h in Headers */,
+				C156B5C81E888E0F00344598 /* soapDiscoveryLookupBindingService.h in Headers */,
+				C156B5C71E888E0D00344598 /* soapDiscoveryLookupBindingProxy.h in Headers */,
+				C156B5C41E888E0800344598 /* soapDeviceBindingService.h in Headers */,
+				C156B5CA1E888E1100344598 /* soapDisplayBindingService.h in Headers */,
+				C156B5C91E888E1000344598 /* soapDisplayBindingProxy.h in Headers */,
+				C156B5C61E888E0B00344598 /* soapDeviceIOBindingService.h in Headers */,
+				C156B5C11E888E0300344598 /* soapCreatePullPointBindingProxy.h in Headers */,
+				C156B5C31E888E0600344598 /* soapDeviceBindingProxy.h in Headers */,
+				C156B5BD1E888DF300344598 /* threads.h in Headers */,
+				C156B5BF1E888DFE00344598 /* wsseapi.h in Headers */,
+				C156B5BE1E888DF500344598 /* wsaapi.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D591A87F1E85F25E006D744B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -762,6 +923,8 @@
 				D591A83B1E85E224006D744B /* Sources */,
 				D591A83C1E85E224006D744B /* Frameworks */,
 				D591A83D1E85E224006D744B /* CopyFiles */,
+				C156B5B91E888DDB00344598 /* Headers */,
+				C156B60F1E88A0F300344598 /* Prepare Framework */,
 			);
 			buildRules = (
 			);
@@ -828,6 +991,10 @@
 						DevelopmentTeam = 22X77ENQ2H;
 						ProvisioningStyle = Automatic;
 					};
+					C156B6081E888FA000344598 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					D591A83E1E85E224006D744B = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -859,6 +1026,7 @@
 				D591A8811E85F25E006D744B /* iOSOnvifFramework */,
 				D591A83E1E85E224006D744B /* iOSOnvif */,
 				D591A89E1E85F5CC006D744B /* iOSOnvifFrameworkTests */,
+				C156B6081E888FA000344598 /* Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -893,6 +1061,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C156B60E1E888FA700344598 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_RELEASE_FOLDER_NAME=\"_ReleaseFramework\"\n\nSF_TODAY=`date '+%Y%m%d'`\nSF_TARGET_NAME=\"iOSOnvif\"\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# Release folder가 없다면 만들자\nif [ ! -d \"$SF_RELEASE_FOLDER_NAME\" ]\nthen\nmkdir -p \"$SF_RELEASE_FOLDER_NAME\"\nfi\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nlipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\nrm -rf \"${SF_WRAPPER_NAME}\"\n\nmv \"${TARGET_BUILD_DIR}/${SF_WRAPPER_NAME}\" \"${SF_RELEASE_FOLDER_NAME}\"";
+		};
+		C156B60F1E88A0F300344598 /* Prepare Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nSF_TARGET_NAME=\"iOSOnvif\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/${FRAMEWORK_VERSION}/Headers\"\n\n# Link the \"Current\" version to \"${FRAMEWORK_VERSION}\"\nln -sfh ${FRAMEWORK_VERSION} \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/Current\"\nln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Headers\"\nln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\ncp -a \"${BUILT_PRODUCTS_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/${FRAMEWORK_VERSION}/Headers\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C156B4351E84DB0600344598 /* Sources */ = {
@@ -1032,6 +1230,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C156B60D1E888FA500344598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D591A83E1E85E224006D744B /* iOSOnvif */;
+			targetProxy = C156B60C1E888FA500344598 /* PBXContainerItemProxy */;
+		};
 		D591A88B1E85F272006D744B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D591A83E1E85E224006D744B /* iOSOnvif */;
@@ -1247,6 +1450,20 @@
 			};
 			name = Release;
 		};
+		C156B60A1E888FA000344598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C156B60B1E888FA000344598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D591A8461E85E225006D744B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1380,6 +1597,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C156B6091E888FA000344598 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C156B60A1E888FA000344598 /* Debug */,
+				C156B60B1E888FA000344598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		D591A8451E85E225006D744B /* Build configuration list for PBXNativeTarget "iOSOnvif" */ = {
 			isa = XCConfigurationList;

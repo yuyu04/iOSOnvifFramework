@@ -4,10 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Framework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>OnvifFramework.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>iOSOnvif.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>iOSOnvifFramework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +33,36 @@
 			<true/>
 		</dict>
 		<key>C156B4421E84DB0600344598</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C156B5FC1E888F1A00344598</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C156B6021E888F6500344598</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C156B6081E888FA000344598</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D591A83E1E85E224006D744B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D591A8811E85F25E006D744B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D591A89E1E85F5CC006D744B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
